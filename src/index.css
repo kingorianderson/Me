@@ -28,6 +28,13 @@
   --text-color-light: #7b9d98;
   --body-color: #f7fdfc;
   --container-color: #fff;
+
+  /** Transition **/
+  --transition: all 400ms ease;
+
+  --container-width-large: 75%;
+  --container-width-medium: 85%;
+  --container-width-small: 90%;
 }
 
 html {
@@ -61,4 +68,78 @@ h1 {
 
 section {
     margin-top: 8rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: #364946;
+}
+
+section > h2 {
+    color: var(--first-color);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--first-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--first-color-second);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--first-color);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--first-color);
+    transition: var(--transition); 
+}
+
+.btn:hover {
+    background: var(--first-color-second);
+    color: white;
+    border-color: transparent
+}
+
+.btn-primary {
+    background: var(--title-color);
+    color:#43cbb5;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*** MEDIA QUERIES (SMALL DEVICES) ***/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-small);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+}
+ 
+
+/*** MEDIA QUERIES (MEDIUM DEVICES) ***/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-medium);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
 }
