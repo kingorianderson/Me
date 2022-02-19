@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    font-family: "Poppins, sans-serif";
+    font-family: 'Poppins', sans-serif;
     background: var(--body-color);
     color: var(--text-color);
     line-height: 1.7;
@@ -111,8 +111,8 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--title-color);
-    color:#43cbb5;
+    background: var(--first-color);
+    color: var(--body-color);
 }
 
 img {

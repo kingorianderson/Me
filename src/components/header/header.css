@@ -1,0 +1,36 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/** Nav Head **/
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.nav_logo {
+
+}
+
+/*** Header Btn ***/
+.header_btn {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
