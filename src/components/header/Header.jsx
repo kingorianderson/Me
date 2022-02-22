@@ -20,12 +20,14 @@ const Header = () => {
         <div className='profile'>
           <img src={PROFILE} alt='profile'/>
         </div>
-        
+
+      
+         
         <a href='#contact' className='scroll_down'>Scroll Dowm</a>
 
       </div>
     </header>
-  )
+  ) 
 }
 
 export default Header
