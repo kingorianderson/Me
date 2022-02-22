@@ -48,19 +48,48 @@ header {
 
 .header_socials::after {
     content: '';
-    width: 1px;
+    width: 2.5px;
     height: 2rem;
     background: var(--first-color);
 }
 
 /*** Profile ***/
-.profile {
-    background: var(--first-color);
+.profile { 
+    background: var(--first-color); 
     width: 30rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
     border-radius: 50%;
+    overflow: hidden;
 } 
 
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    left: calc(50% - 11rem);
+    height: 100%;
+    width: auto;
+  }
+
+  /*** Scroll Dowm ***/
+  .scroll_down {
+      color: var(--first-color);
+      position: absolute;
+      right: -2.3rem;
+      bottom: 5rem;
+     row-gap: 2.25rem;
+     display: grid;
+      justify-items: center;
+  }
+
+  .scroll_icon {
+   
+      font-size: 1.25rem;
+  }
+
+  .scroll_name {
+       
+      transform: rotate(-90deg);
+  }

@@ -4,6 +4,8 @@ import BTN from './HeaderBtn'
 import PROFILE from '../../assets/profile.png'
 import HeaderSocials from './HeaderSocials'
 import Nav from './Nav'
+import { CgMouse } from 'react-icons/cg'
+
 
 const Header = () => {
   return (
@@ -18,13 +20,14 @@ const Header = () => {
         <HeaderSocials/>
 
         <div className='profile'>
-          <img src={PROFILE} alt='profile'/>
+          <img src={PROFILE} alt='profile' className='profile-pic'/>
         </div>
 
       
-         
-        <a href='#contact' className='scroll_down'>Scroll Dowm</a>
-
+         <div className='scroll_down'>
+           <a href='#contact' className='scroll_icon'><CgMouse/> </a>
+           <a href='#contact' className='scroll_name'>Scroll Down</a>
+        </div>
       </div>
     </header>
   ) 
