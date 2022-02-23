@@ -1,8 +1,11 @@
 import React from 'react'
+import './skills.css'
 
-const Skills = () => {
+
+const Q = () => {
   return (
     <div>
+
 
 <section className="skills section" id="skills">
         <h2 className="section__title">Skills</h2>
@@ -220,9 +223,8 @@ const Skills = () => {
       </section>
     
 
-
     </div>
   )
 }
 
-export default Skills
+export default Q

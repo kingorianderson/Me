@@ -56,19 +56,22 @@ header {
 /*** Profile ***/
 .profile { 
     background: var(--first-color); 
-    width: 30rem;
-    height: 30rem;
+    width: 22rem;
+    height: 22rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 11rem); 
     margin-top: 4rem;
     border-radius: 50%;
     overflow: hidden;
+    justify-content: center;
+   
 } 
 
 .profile-pic {
+    justify-self: center;
     display: inline;
     margin: 0 auto;
-    left: calc(50% - 11rem);
+/*left: calc(50% - 11rem);*/
     height: 100%;
     width: auto;
   }
@@ -93,3 +96,38 @@ header {
        
       transform: rotate(-90deg);
   }
+
+  
+/*** MEDIA QUERIES (SMALL DEVICES) ***/
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .profile { 
+        
+        width: 14rem;
+        height: 14rem;
+        
+        left: calc(50% - 7rem); 
+       
+       
+    } 
+
+    /*** Header Btn ***/
+.header_btn {
+    margin-top: .5rem;
+    display: flex;
+    gap: 1.2rem;
+   
+}
+    
+}
+ 
+
+/*** MEDIA QUERIES (MEDIUM DEVICES) ***/
+@media screen and (max-width: 1024px) {
+    header {
+        height: 86vh;
+    }
+}
