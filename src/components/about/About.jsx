@@ -20,21 +20,27 @@ const About = () => {
         <div className='about_content'>
           <div className='about_cards'>
             <article className='about_card'>
-              <FaAward about='about_icon'/>
+              <FaAward className='about_icon'/>
               <h5>Experience</h5>
               <small>3+ Years Working</small>
             </article>
             <article className='about_card'>
-              <FaUserFriends about='about_icon'/>
+              <FaUserFriends className='about_icon'/>
               <h5>Clients</h5>
               <small>60+ Worldwide</small>
             </article>
             <article className='about_card'>
-              <BsFolderFill about='about_icon'/>
+              <BsFolderFill className='about_icon'/>
               <h5>Projects</h5>
               <small>100+ Completed</small>
             </article>
           </div>
+
+          <p>
+          High level experience in UI/UX design and web development knowledge, producing quality work.
+          </p>
+
+          <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
     </section>
