@@ -2,7 +2,12 @@ import React from 'react'
 import './experience.css'
 
 
-const skillsContent = document.getElementsByClassName('skills__content'),
+
+
+const Experience = () => {
+
+
+  const skillsContent = document.getElementsByClassName('skills__content'),
   skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
@@ -21,7 +26,7 @@ skillsHeader.forEach((el) => {
 }); 
 
 
-const Experience = () => {
+
   return ( 
     
     <section className="skills section" id="skills">
