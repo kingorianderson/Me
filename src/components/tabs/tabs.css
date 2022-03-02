@@ -1,12 +1,28 @@
+:root {
+
+    /**
+     * Colors 
+     */
+  
+     --eerie-black-dark:#1d1b19;
+     --liver-chestunut: #96764f;
+     --battleship-gray: #878787;
+     --spanish-gray:    #999999;
+     --eerie-black:     #151412;
+     --smoky-black:     #181715;
+     --light-gray:      #cccccc;
+     --may-green:       #459a3c;
+     --gainsboro:       #dedede;
+     --white:           #ffffff;
+     --jet:             #333333;
+}  
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  
-  body {
-    background: #fff;
-  }
+ 
   /*
   .container {
     display: flex;
@@ -19,7 +35,7 @@
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
   }*/
-  
+  /*/
   .bloc-tabs {
     display: flex;
   }
@@ -38,35 +54,30 @@
   .tabs:not(:last-child){
     border-right: 1px solid rgba(0, 0, 0, 0.274);
   }
-  
+  */
   .active-tabs  {
-    background: white;
+    color: #0f8a75;
     border-bottom: 1px solid transparent;
+    border-color: #0f8a75;
+    
   }
-  
+  /*
   .active-tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
+   
     background: rgb(88, 147, 241);
-  }
+  }*/
   
   
   
   button {
-    border: none;
+    cursor: pointer;
     
   }
   .content-tabs {
     flex-grow : 1;
   }
   .content {
-    background: white;
+  /*  background: white;*/
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -74,21 +85,28 @@
   }
   .content h2 {
     padding: 0px 0 5px 0px;
-  }
+  } /*
   .content hr {
     width: 100px;
     height: 2px;
     background: #222;
     margin-bottom: 5px;
-  }
+  }*/
   .content p {
     width: 100%;
     height: 100%;
   }
   .active-content {
     display: block;
+    animation: fade 0.75s ease forwards;
   }
   
+  @keyframes fade {
+
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
 
   .skill-box { margin-bottom: 30px; }
 
@@ -107,8 +125,8 @@
 }
 
 .progress {
-  height: 1px;
-  background: var(--liver-chestunut);
+  height: 2px;
+  background: #0f8a75;
   transform: scale(0);
   transform-origin: left;
   animation: scaleUp 3s cubic-bezier(.165, .84, .44, 1) forwards;
@@ -117,7 +135,7 @@
 @keyframes scaleUp {
   
   0%   { transform: scale(0); }
-  100% { transform: scale(1); }
+  50% { transform: scale(1); }
 
 }
 
@@ -129,6 +147,8 @@
   bottom: calc(100% + 10px);
   transform: translateX(-50%);
   padding: 2px 8px;
+  width: 50%;
+  left: 50%;
 }
 
 .progress-rate::after {
@@ -151,3 +171,79 @@
   margin-top: 40px;
 }
 
+
+.content-card {
+    position: relative;
+    background: var(--smoky-black);
+    border: 1px solid var(--eerie-black);
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+  }
+  
+  .content-card::before {
+    content: '';
+    position: absolute;
+    background: #0f8a75;
+    width:  3px;
+    height: 50px;
+    top:   50%;
+    left: -1px;
+    transform: translateY(-50%);
+  }
+  
+  .content-card .card-head {
+    display:        flex;
+    align-items:    start;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .content-card .card-head h4 {
+    color: #0f8a75;
+    font-size: var(--fs-5);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .content-card .card-head p { color: var(--battleship-gray); }
+  
+  .content-card .card-body h3 {
+    color: var(--gainsboro);
+    font-size: var(--fs-3);
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  
+  .content-card .card-body p {
+    color: var(--battleship-gray);
+    font-size: var(--fs-5);
+  }
+
+
+  
+  .tab-nav {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    flex-wrap:       wrap;
+    gap: 20px 0;
+    margin-bottom: 40px;
+  }
+  
+  .tab-nav li { position: relative; }
+  
+  .tab-nav li:not(:last-child) { padding-right: 80px; }
+  
+  .tab-nav li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    background: #0f8a75;
+    width: 40px;
+    height: 3px;
+    top:   55%;
+    right: 20px;
+  }
+  
+  

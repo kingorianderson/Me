@@ -10,38 +10,82 @@ function Tabs() {
 
   return (
     <div className="container">
-      <div className="bloc-tabs">
+      <ul className="tab-nav">
+          <li>
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}                          
-        >
-          Skills
-        </button>
+        ><h2> Skills</h2>
+         
+        </button> </li>  <li>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          Experience
-        </button>
+          <h2>Experience</h2>
+        </button> </li> <li>
         <button
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          Education
-        </button>
-      </div>
+          <h2>Education</h2>
+        </button> </li>
+      </ul>
 
       <div className="content-tabs">
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
+          <div class="one tab-content active">
+
+<div className="content-card">
+
+  <div className="card-head">
+    <h4>Frenify llc</h4>
+    <p>( 2018 — Today )</p>
+  </div>
+
+  <div className="card-body">
+    <h3>Sr. Front-end Engineer</h3>
+    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+</div>
+
+
+<div className="content-card">
+
+  <div className="card-head">
+    <h4>Google llc</h4>
+    <p>( 2016 — 2018 )</p>
+  </div>
+
+  <div className="card-body">
+    <h3>Front-end Developer</h3>
+    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+</div>
+
+
+<div className="content-card">
+
+  <div className="card-head">
+    <h4>Twitter llc</h4>
+    <p>( 2016 — 2011 )</p>
+  </div>
+
+  <div className="card-body">
+    <h3>Graphic Designer</h3>
+    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+</div>
+
+</div>
         </div>
 
         <div
