@@ -1,30 +1,16 @@
 import React from 'react'
-import ReactDOM from "react-dom";
+import { useState } from "react";
 import './experience.css'
 
 
 
 
-const Experience = () => {
+function Experience() {
+  const [toggleState, setToggleState] = useState(1);
 
-
-  const skillsContent = document.getElementsByClassName('skills__content'),
-  skillsHeader = document.querySelectorAll('.skills__header');
-
-function toggleSkills() {
-  let itemClass = this.parentNode.className;
-
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = 'skills__content skills__close';
-  }
-  if (itemClass === 'skills__content skills__close') {
-    this.parentNode.className = 'skills__content skills__open';
-  }
-}
-
-skillsHeader.forEach((el) => {
-  el.addEventListener('click', toggleSkills);
-}); 
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
 
 
 
@@ -37,18 +23,26 @@ skillsHeader.forEach((el) => {
         <div className="skills__container container grid">
           <div>
            
-            <div className="skills__content skills__open">
+            <div className="skills__content ">
               <div className="skills__header">
                 <i className="uil uil-brackets-curly skills__icon"></i>
 
              
                 <div>
-                  <h1 className="skills__titles">Frontend developer</h1>
+                  <h1 className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)}>Frontend developer</h1>
+
+          
                   <span className="skills__subtitle">More than 2 years</span>
                 </div>
                 <i className="uil uil-angle-down skills__icon skills__arrow"></i>
               </div>
              
+
+              <div className="content-tabs">
+        <div
+          className={toggleState === 1 ? "content  active-content" : "content"}
+        >
               <div className="skills__list grid">
                
                 <div className="skills__data">
@@ -91,22 +85,32 @@ skillsHeader.forEach((el) => {
                   </div>
                 </div>
               </div>
+</div> </div>
+
+
             </div>
           </div>
 
           <div>
            
-            <div className="skills__content skills__close">
+            <div className="skills__content">
               <div className="skills__header">
                 <i className=" skills__icon"></i>
 
                
                 <div>
-                  <h1 className="skills__titles">Backend developer</h1>
+                  <h1 className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)} >Backend developer</h1>
                   <span className="skills__subtitle">More than 1 y ears</span>
                 </div>
                 <i className="uil uil-angle-down skills__icon skills__arrow"></i>
               </div>
+
+
+              <div className="content-tabs">
+        <div
+          className={toggleState === 2 ? "content  active-content" : "content"}
+        >
              
               <div className="skills__list grid">
                
@@ -140,22 +144,31 @@ skillsHeader.forEach((el) => {
                   </div>
                 </div>
               </div>
+</div></div>
+
             </div>
           </div>
 
           <div>
            
-            <div className="skills__content skills__close">
+            <div className="skills__content">
               <div className="skills__header">
                 <i className="uil uil-crop-alt-rotate-right skills__icon"></i>
 
                 <div>
-                  <h1 className="skills__titles">Designer</h1>
+                  <h1 className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)} >Designer</h1>
                   <span className="skills__subtitle">More than 5 years</span>
                 </div>
                 <i className="uil uil-angle-down skills__icon skills__arrow"></i>
               </div>
-            
+
+
+
+              <div className="content-tabs">
+        <div
+          className={toggleState === 3 ? "content  active-content" : "content"}
+        >
               <div className="skills__list grid">
                
                 <div className="skills__data">
@@ -188,6 +201,9 @@ skillsHeader.forEach((el) => {
                   </div>
                 </div>
               </div>
+</div> </div>
+
+
             </div>
           </div>
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./tabs.css";
+import "../experience/Experience";
+import Experience from "../experience/Experience";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -32,121 +34,123 @@ function Tabs() {
         </button> </li>
       </ul>
 
+
+
       <div className="content-tabs">
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <div class="one tab-content active">
 
-<div className="content-card">
+           <div class="qualification__content" data-content id="work">
+             
+              <div class="qualification__data">
+                <div class="qualification_align">
+                  <h3 class="qualification__title">UI/ UX Designer</h3>
+                  <span class="qualification__subtitle">Graphic Designer</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt">2020 - 2020</i>
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+             
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
 
-  <div className="card-head">
-    <h4>Frenify llc</h4>
-    <p>( 2018 — Today )</p>
-  </div>
+                <div>
+                  <h3 class="qualification__title">Design Studio</h3>
+                  <span class="qualification__subtitle">Graphic Designer</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt">2020 - 2020</i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="qualification__data">
+                <div class="qualification_align">
+                  <h3 class="qualification__title">ICT Intern</h3>
+                  <span class="qualification__subtitle">NHIF</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt">2020 - 2021</i>
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  
+                </div>
+              </div>
+            </div>
 
-  <div className="card-body">
-    <h3>Sr. Front-end Engineer</h3>
-    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-</div>
-
-
-<div className="content-card">
-
-  <div className="card-head">
-    <h4>Google llc</h4>
-    <p>( 2016 — 2018 )</p>
-  </div>
-
-  <div className="card-body">
-    <h3>Front-end Developer</h3>
-    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-</div>
-
-
-<div className="content-card">
-
-  <div className="card-head">
-    <h4>Twitter llc</h4>
-    <p>( 2016 — 2011 )</p>
-  </div>
-
-  <div className="card-body">
-    <h3>Graphic Designer</h3>
-    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-</div>
-
-</div>
         </div>
 
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>Content 2</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
+         
+      
+
+          
+          <div class="qualification__sections">
+            
+            <div class="qualification__content qualification__active" data-content id="education">
+            
+              <div class="qualification__data">
+                <div class="qualification_align">
+                  <h3 class="qualification__title">Diploma in Technical Trainers Education</h3>
+                  <span class="qualification__subtitle">KTTC - Nairobi</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt">2021 - Present</i>
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">BSc Computer Technology</h3>
+                  <span class="qualification__subtitle"
+                    >Meru University of Sci. and Technology</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt">2016 - 2020</i>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                 
+            </div>
+           
+            
+          </div>
+        </div>
+        </div>
         </div>
 
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
-        >
-          <h2>Content 3</h2>
-          <hr />
-          <div className="skill-box">
-                <h4 className="skill-name">Adobe Photoshop</h4>
-
-                <div className="progress-bar">
-                  <div className="progress" ></div>
-                  <div className="progress-rate" >92%</div>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <h4 className="skill-name">HTML5 / CSS3</h4>
-
-                <div className="progress-bar">
-                  <div className="progress" ></div>
-                  <div className="progress-rate" >95%</div>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <h4 className="skill-name">WordPress</h4>
-
-                <div className="progress-bar">
-                  <div className="progress" ></div>
-                  <div className="progress-rate" >80%</div>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <h4 className="skill-name">Adobe Illustrator</h4>
-
-                <div className="progress-bar">
-                  <div className="progress" ></div>
-                  <div className="progress-rate" >85%</div>
-                </div>
-              </div>
-
-              <p className="skill-text" id="skills">
-                A freelance creative designer with a love for minimal design,
-                clean typography and well-written code, located in San Francisco.
-                Provide high quality and cost effective offshore web and software
-                development services. Wide range of web and software development
-                services across the world.
-              </p>
+        > 
+        <Experience/>
         </div>
       </div>
     </div>
