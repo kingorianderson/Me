@@ -28,7 +28,7 @@ nav a:hover {
     color: white;
     background: var(--first-color);
 }
-
+/*
 nav a.active {
     background: var(--first-color);
-}
+}*/
