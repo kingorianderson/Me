@@ -1,11 +1,15 @@
 import React from 'react'
 import { useState } from "react";
-import './experience.css'
+import './skills.css'
+import { BiCodeCurly, BiServer } from 'react-icons/bi'
+import { IoIosArrowDown } from 'react-icons/io'
+import { MdCropRotate } from 'react-icons/md'
+import { FaNetworkWired } from 'react-icons/fa'
 
 
 
 
-function Experience() {
+function Skills() {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
@@ -16,7 +20,7 @@ function Experience() {
 
   return ( 
     
-    <section className="skills section" id="skills">
+    <div className="">
       
 
         <div className="skills__container container grid">
@@ -24,17 +28,15 @@ function Experience() {
            
             <div className="skills__content ">
               <div className="skills__header">
-                <i className="uil uil-brackets-curly skills__icon"></i>
+                <i className="skills__icon"><BiCodeCurly/> </i>
 
              
-                <div>
-                  <h2 className={toggleState === 1 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(1)}>Frontend developer</h2>
-
-          
+                <div className={toggleState === 1 ? "tabskills active-tabskills" : "tabskills"}
+          onClick={() => toggleTab(1)}>
+                  <h2>Frontend Skills</h2>
                   <span className="skills__subtitle">More than 2 years</span>
                 </div>
-                <i className="uil uil-angle-down skills__icon skills__arrow"></i>
+                <i className="skills__icon skills__arrow"><IoIosArrowDown/> </i>
               </div>
              
 
@@ -94,15 +96,15 @@ function Experience() {
            
             <div className="skills__content">
               <div className="skills__header">
-                <i className=" skills__icon"></i>
+                <i className=" skills__icon"><BiServer/></i>
 
                
-                <div>
-                  <h2 className={toggleState === 2 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(2)} >Backend developer</h2>
-                  <span className="skills__subtitle">More than 1 y ears</span>
+                <div className={toggleState === 2 ? "tabskills active-tabskills" : "tabskills"}
+          onClick={() => toggleTab(2)}>
+                  <h2>Backend Skills</h2>
+                  <span className="skills__subtitle">More than 1 years</span>
                 </div>
-                <i className="uil uil-angle-down skills__icon skills__arrow"></i>
+                <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
               </div>
 
 
@@ -152,14 +154,14 @@ function Experience() {
            
             <div className="skills__content">
               <div className="skills__header">
-                <i className="uil uil-crop-alt-rotate-right skills__icon"></i>
+                <i className="skills__icon"><MdCropRotate/></i>
 
-                <div>
-                  <h2 className={toggleState === 3 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(3)} >Designer</h2>
+                <div className={toggleState === 3 ? "tabskills active-tabskills" : "tabskills"}
+          onClick={() => toggleTab(3)}>
+                  <h2>Design Skills</h2>
                   <span className="skills__subtitle">More than 5 years</span>
                 </div>
-                <i className="uil uil-angle-down skills__icon skills__arrow"></i>
+                <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
               </div>
 
 
@@ -209,14 +211,14 @@ function Experience() {
            
            <div className="skills__content skills__close">
             <div className="skills__header">
-              <i className="uil uil-wifi-router skills__icon"></i>
+              <i className="skills__icon"><FaNetworkWired/></i>
 
          
               <div>
-                <h2 className="skills__titles">Network Admin</h2>
+                <h2 className="skills__titles">Networking Skills</h2>
                 <span className="skills__subtitle">More than 6 months</span>
               </div>
-              <i className="uil uil-angle-down skills__icon skills__arrow"></i>
+              <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
             </div>
        
             <div className="skills__list grid">
@@ -257,8 +259,8 @@ function Experience() {
         
           
         
-      </section>
+      </div>
   )
 }
 
-export default Experience
+export default Skills

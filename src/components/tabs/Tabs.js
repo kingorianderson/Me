@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./tabs.css";
-import "../experience/Experience";
-import Experience from "../experience/Experience";
+import Skills from "./skills/Skills";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -41,10 +40,16 @@ function Tabs() {
 
 
       <div className="content-tabs">
-        <div
+       {/*** Tab 1 ***/}
+      <div
           className={toggleState === 1 ? "content  active-content" : "content"}
+        > 
+        <Skills/>
+        </div>
+       {/*** Tab 2 ***/}
+        <div
+          className={toggleState === 2 ? "content  active-content" : "content"}
         >
-
            <div class="qualification__content" data-content id="work">
              
               <div class="qualification__data">
@@ -94,10 +99,9 @@ function Tabs() {
 
         </div>
 
-
-
+       {/*** Tab 3 ***/}
         <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
+          className={toggleState === 3 ? "content  active-content" : "content"}
         >
          
           <div class="qualification__sections">
@@ -131,22 +135,14 @@ function Tabs() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div> 
               
-              
-        </div>
-        </div>
-        </div>
+        
+   </div>
+</div>
 
-
-        <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
-        > 
-        <Experience/>
-        </div>
-
-
-      </div>
-    </div>
   );
 }
 
