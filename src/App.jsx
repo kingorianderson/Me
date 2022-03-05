@@ -11,12 +11,14 @@ import Tabs from './components/tabs/Tabs'
 
 
 
+
+
 const App = () => {
   return (
     <>
        <Header/>
        <Nav/>
-       <About/>
+       
        <Tabs/>
        <Services/>
        <Portfolio/>

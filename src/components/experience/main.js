@@ -1,3 +1,4 @@
+/*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
   skillsHeader = document.querySelectorAll('.skills__header');
 

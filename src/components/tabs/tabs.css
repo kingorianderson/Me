@@ -1,21 +1,3 @@
-:root {
-
-    /**
-     * Colors 
-     */
-  
-     --eerie-black-dark:#1d1b19;
-     --liver-chestunut: #96764f;
-     --battleship-gray: #878787;
-     --spanish-gray:    #999999;
-     --eerie-black:     #151412;
-     --smoky-black:     #181715;
-     --light-gray:      #cccccc;
-     --may-green:       #459a3c;
-     --gainsboro:       #dedede;
-     --white:           #ffffff;
-     --jet:             #333333;
-}  
 
 *, ::before, ::after {
     box-sizing: border-box;
