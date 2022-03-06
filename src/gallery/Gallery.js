@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Data from "./Data";
 import Card from "./Card";
 import Buttons from "./Buttons";
+import './gallery.css'
 
-const Portfolio = () => {
+const File = () => {
   const [item, setItem] = useState(Data);
 
   const menuItems = [...new Set(Data.map((Val) => Val.category))];
@@ -16,9 +17,9 @@ const Portfolio = () => {
   };
   return (
     <>
-      <div className="container-fluid">
-        <div className="row">
-          <h1 className="col-12 text-center my-3 fw-bold">Food Filtering App</h1>
+      <div className="">
+        <div className="">
+          <h1 className="">Portfolio</h1>
           <Buttons
             filterItem={filterItem}
             setItem={setItem}
@@ -31,4 +32,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default File;
