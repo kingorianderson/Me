@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "./Data";
+import { Data } from "./../../Data"
 import Card from "./Card";
 import Buttons from "./Buttons";
 import './gallery.css'
@@ -17,17 +17,17 @@ const File = () => {
   };
   return (
     <>
-      <div className="">
-        <div className="">
-          <h1 className="">Portfolio</h1>
+      <section id="portfolio">
+        <h2 className="section__title">Portfolio</h2>
+          <span className="section__subtitle">Recent Work</span>
           <Buttons
             filterItem={filterItem}
             setItem={setItem}
             menuItems={menuItems}
           />
           <Card item={item} />
-        </div>
-      </div>
+        
+      </section>
     </>
   );
 };

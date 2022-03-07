@@ -15,15 +15,20 @@
 /* Active item portfolio */
 .active-portfolio {
     background-color: var(--first-color);
-    color: var(--body-color);
+    color: var(--container-color);
 }
 
 .work_item {
     cursor: pointer;
-    color: var(--text-color-light);
+    /*color: var(--text-color-light);*/
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
     border-radius: 0.5rem;
+}
+
+.work_item:hover {
+    color: var(--container-color);
+    background-color: var(--first-color);
 }
 
 .portfolio_item {

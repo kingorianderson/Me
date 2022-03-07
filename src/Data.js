@@ -1,4 +1,4 @@
-const Data = [
+export const Data = [
     {
       id: "1",
       title: "Coffee App UI",
@@ -48,5 +48,22 @@ const Data = [
       demo: "https://github.com/kingorianderson",
        },
   ];
+
+  export const testimonial = [
+    {
+      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      name: "Mwangi j.",
+      review: "The attention to detail provided was impressive and his customer service skills are excellent.",
+    },
+    {
+      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      name: "Wangari R.",
+      review: "I chatted with King'ori. He was very helpful and answered all my questions concerning my web design.",
+    },
+    {
+      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      name: "Kipkorir A.",
+      review: "We are extremely satisfied with the work he has provided for us and would encourage you to use him in design work for your organisation.",
+    }
+  ];
   
-  export default Data;
