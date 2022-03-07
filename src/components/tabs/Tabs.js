@@ -10,6 +10,7 @@ function Tabs() {
   };
 
   return (
+    <section id='skills'>
     <div className="container">
       <ul className="tab-nav">
           
@@ -142,7 +143,7 @@ function Tabs() {
         
    </div>
 </div>
-
+</section>
   );
 }
 
