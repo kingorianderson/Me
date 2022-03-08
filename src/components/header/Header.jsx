@@ -24,10 +24,10 @@ const Header = () => {
         </div>
 
       
-         <div className='scroll_down'>
-           <a href='#contact' className='scroll_icon'><CgMouse/> </a>
-           <a href='#contact' className='scroll_name'>Scroll Down</a>
-        </div>
+         <a href='#contact' className='scroll_down'>
+           <div className='scroll_icon'><CgMouse/> </div>
+           <div  className='scroll_name'>Scroll Down</div>
+        </a>
       </div>
     </header>
   ) 

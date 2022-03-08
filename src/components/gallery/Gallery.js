@@ -18,8 +18,9 @@ const File = () => {
   return (
     <>
       <section id="portfolio">
-        <h2 className="section__title">Portfolio</h2>
-          <span className="section__subtitle">Recent Work</span>
+        <h5>Recent Work</h5>
+        <h2>Portfolio</h2>
+          
           <Buttons
             filterItem={filterItem}
             setItem={setItem}

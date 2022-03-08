@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2.5rem;
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@ header {
 
 /** Nav Head **/
 .head {
-    position: fixed;
+    
     top: 0;
     left: 0;
    
@@ -24,7 +24,7 @@ header {
     align-items: center;
 }
 .nav_logo {
-
+   
 }
 
 /*** Header Btn ***/
@@ -43,7 +43,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 35%;
 }
 
 .header_socials::after {
@@ -51,6 +51,16 @@ header {
     width: 2.5px;
     height: 2rem;
     background: var(--first-color);
+}
+
+.header_social-link {
+    width: max-content;
+    background-color: var(--first-color-lighter);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    display: flex;
+    font-size: 1rem;
+    transition: 0.4s;
 }
 
 /*** Profile ***/
@@ -81,7 +91,7 @@ header {
       color: var(--first-color);
       position: absolute;
       right: -2.3rem;
-      bottom: 5rem;
+      bottom: 38%;
      row-gap: 2.25rem;
      display: grid;
       justify-items: center;

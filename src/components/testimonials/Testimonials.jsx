@@ -16,8 +16,8 @@ import 'swiper/css/pagination';
 const Testimonials = () => {
   return (
     <section>
-      <span className="section__subtitle">My client say</span>
-      <h2 className="section__title">Testimonial</h2>
+      <h5>My client say</h5>
+      <h2>Testimonial</h2>
 
       <Swiper className="container testimonials_container"
        // install Swiper modules

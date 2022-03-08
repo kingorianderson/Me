@@ -19,14 +19,15 @@
   --hue-color: 170; 
 
   /* HSL color mode */
-  --first-color: #0f8a75;
-  --first-color-second: #43cbb5;
-  --first-color-alt: #0f8a7581;
-  --first-color-lighter: #b6fcf0;
-  --title-color: hsl(170,15,9);
-  --text-color: #364946;
-  --text-color-light: #7b9d98;
-  --body-color: #f7fdfc;
+
+  --first-color: hsl(var(--hue-color), 80%, 30%);  /* hsl(170, 80%, 30%) */
+  --first-color-second: #43cbb5; /* hsl(170, 57%, 53%)*/
+  --first-color-alt: #14b89c; /* hsl(170, 80%, 40%)*/
+  --first-color-lighter: #b6fcf0; /*hsl(170, 92%, 85%)*/
+  --title-color: hsl(170,15,9);/*hsl(170, 15%, 9%)*/
+  --text-color: #364946; /*hsl(170, 15%, 25%)*/
+  --text-color-light: #7b9d98; /*hsl(170, 15%, 55%)*/
+  --body-color: hsl(170, 97%, 97%); /*hsl(170, 97%, 97%)*/
   --container-color: #fff;
 
   /** Transition **/
@@ -122,11 +123,11 @@ h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
-
+/*
 section {
     margin-top: 8rem;
     height: 100vh;
-}
+}*/
 
 section > h2, section > h5 {
     text-align: center;
@@ -151,24 +152,6 @@ a:hover {
     color: var(--first-color-second);
 }
 
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-.section {
-    padding: 2rem 0 4rem;
-  }
-  .section__title {
-    font-size: var(--h1-font-size);
-  }
-  .section__subtitle {
-    display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
-  }
-  .section__title,
-  .section__subtitle {
-    text-align: center;
-  }
-  
 
 /*==================== BUTTONS ====================*/
 .button {
@@ -271,24 +254,12 @@ img {
 }
 
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/*==================== MEDIA QUERIES ==================
+/* For small devices 
 @media screen and (max-width: 350px) {
     .container {
       margin-left: var(--mb-1);
       margin-right: var(--mb-1);
-    }
-    .nav__menu {
-      padding: 2rem 0.25rem 4rem;
-    }
-    .nav__list {
-      column-gap: 0;
-    }
-    .home__content {
-      grid-template-columns: 0.25fr 3fr;
-    }
-    .home__blob {
-      width: 180px;
     }
     
     .skills__title {
@@ -316,21 +287,10 @@ img {
     .services__modal{
       padding: 0 .5rem;
     }
-   /* .project__img{
-      width: 200px;
-    }*/
     .testimonial__data,
     .testimonial__header {
       flex-direction: column;
       align-items: center;
-    }
-    .testimonial__img {
-      margin-right: 0;
-      margin-bottom: var(--mb-0-25);
-    }
-    .testimonial__data,
-    .testimonial__description {
-      text-align: center;
     }
     .project__bg{
       background: none;
@@ -370,7 +330,7 @@ img {
     }
   
   }
-  /* For medium devices */
+  /* For medium devices 
   @media screen and (min-width: 568px) {
     .home__content {
       grid-template-columns: max-content 1fr 1fr;
@@ -402,12 +362,7 @@ img {
     .portfolio__container {
       width: 70%;
       margin: auto;
-    }/*
-    .qualification__sections {
-      display: grid;
-      grid-template-columns: 0.6fr;
-      justify-content: center;
-    }*/
+    }
     .project__bg{
       background: none;
     }
@@ -519,9 +474,7 @@ img {
     .services__modal-content{
       width: 450px;
     }
-    /*.portfolio__img {
-      width: 450px; 
-    }*/
+    
     .portfolio__content {
       align-items: center;
      
@@ -558,10 +511,7 @@ img {
     .footer__bg {
       padding: 3rem 0 3.5rem;
     }
-   /* .contact__form {
-      width: 90%;
-      margin: auto;
-    }*/
+   
     .footer__links {
        flex-direction: row; 
        column-gap: 2em; 
@@ -572,9 +522,9 @@ img {
     .footer__copy{
       margin-top: 4.5rem;
     }
-  }
+  }*/
   
-  /* For large devices */
+  /* For large devices 
   @media screen and (min-width: 1024px) {
     .header,
     .main,
@@ -613,4 +563,4 @@ img {
     .contact__inputs{
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+  }*/

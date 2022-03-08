@@ -6,8 +6,9 @@ const Services = () => {
     
 
 <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What I Offer</span>
+        <h5>What I Offer</h5>
+        <h2>Services</h2>
+        
 
         <div class="services__container container grid">
 

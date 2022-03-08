@@ -33,7 +33,7 @@ function Skills() {
              
                 <div className={toggleState === 1 ? "tabskills active-tabskills" : "tabskills"}
           onClick={() => toggleTab(1)}>
-                  <h2>Frontend Skills</h2>
+                  <h3>Frontend Skills</h3>
                   <span className="skills__subtitle">More than 2 years</span>
                 </div>
                 <i className="skills__icon skills__arrow"><IoIosArrowDown/> </i>
@@ -101,7 +101,7 @@ function Skills() {
                
                 <div className={toggleState === 2 ? "tabskills active-tabskills" : "tabskills"}
           onClick={() => toggleTab(2)}>
-                  <h2>Backend Skills</h2>
+                  <h3>Backend Skills</h3>
                   <span className="skills__subtitle">More than 1 years</span>
                 </div>
                 <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
@@ -158,7 +158,7 @@ function Skills() {
 
                 <div className={toggleState === 3 ? "tabskills active-tabskills" : "tabskills"}
           onClick={() => toggleTab(3)}>
-                  <h2>Design Skills</h2>
+                  <h3>Design Skills</h3>
                   <span className="skills__subtitle">More than 5 years</span>
                 </div>
                 <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
@@ -215,7 +215,7 @@ function Skills() {
 
          
               <div>
-                <h2 className="skills__titles">Networking Skills</h2>
+                <h3>Networking Skills</h3>
                 <span className="skills__subtitle">More than 6 months</span>
               </div>
               <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>

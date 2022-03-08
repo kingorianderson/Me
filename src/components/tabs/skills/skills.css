@@ -9,7 +9,8 @@
   
   /*==================== SKILLS ====================*/
   .skills__container {
-      row-gap: 0;
+      /*row-gap: 0;*/
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     .skills__header {
       display: flex;
