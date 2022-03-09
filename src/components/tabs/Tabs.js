@@ -13,9 +13,10 @@ function Tabs() {
     <section id='skills'>
     <div className="container">
       <ul className="tab-nav">
-          
+
+        
         <button
-          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          className={toggleState === 1 ? "tabs active-tabs tab-1" : "tabs"}
           onClick={() => toggleTab(1)}                          
         ><h2> Skills</h2> 
         </button> 
@@ -25,17 +26,17 @@ function Tabs() {
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
-        ><h2>Experience</h2>
+        ><h2 className="tab-2">Experience</h2>
         </button> 
 
         <li></li> 
-
+         <div className="tab-3">
         <button
-          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          className={toggleState === 3 ? "tabs active-tabs tab-3" : "tabs"}
           onClick={() => toggleTab(3)}
         ><h2>Education</h2>
         </button>
-        
+        </div>
       </ul>
 
 

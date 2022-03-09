@@ -74,6 +74,7 @@ header {
     border-radius: 50%;
     overflow: hidden;
     justify-content: center;
+    justify-self: center;
    
 } 
 

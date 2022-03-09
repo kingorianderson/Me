@@ -4,7 +4,7 @@ import BTN from './HeaderBtn'
 import PROFILE from '../../assets/profile.png'
 import HeaderSocials from './HeaderSocials'
 import Nav from './Nav'
-import { CgMouse } from 'react-icons/cg'
+import { BsMouseFill } from 'react-icons/bs'
 
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
 
       
          <a href='#contact' className='scroll_down'>
-           <div className='scroll_icon'><CgMouse/> </div>
+           <div className='scroll_icon'><BsMouseFill/> </div>
            <div  className='scroll_name'>Scroll Down</div>
         </a>
       </div>

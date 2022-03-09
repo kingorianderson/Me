@@ -128,7 +128,8 @@
 /*** Line Between ***/
   .tab-nav li { position: relative; }
   
-  .tab-nav li:not(:last-child) { padding-right: 80px; }
+  .tab-nav li:not(:last-child) { padding-right: 25px; }
+  .tab-nav li:not(:last-child) { padding-left: 20px; }
   
   .tab-nav li:not(:last-child)::after {
     content: '';
