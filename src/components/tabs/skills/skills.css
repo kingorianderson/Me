@@ -11,6 +11,7 @@
   .skills__container {
       /*row-gap: 0;*/
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-right: auto;
     }
     .skills__header {
       display: flex;
@@ -41,7 +42,7 @@
     }
     .skills__list {
       row-gap: 1.5rem;
-      padding-left: 2.7rem;
+      padding-left: 1.7rem;
     }
     .skills__titles {
       display: flex;

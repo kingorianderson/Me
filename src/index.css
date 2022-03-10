@@ -263,7 +263,8 @@ img {
      justify-content: left;
   }
 
-
+  .tab-nav li:not(:last-child) { padding-left: 20px; }
+  .tab-nav li:not(:last-child) { padding-right: 25px; }
   .tab-nav li:not(:last-child)::after {
     width: 10px;
     height: 3px;
@@ -271,10 +272,28 @@ img {
     right: 20px;
   }
 
-  .tab-3 {
-  
-  }
 
+  .testimonial {
+    padding: 1.5rem;
+}
+
+.client_avatar {
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container.testimonials_container {
+  width: 85%;
+  padding-bottom: 2rem;
+}
+
+.client_review {
+  margin: 0 auto 0;
+}
+
+.gallery_btn {
+  margin: 5px;
+}
   
 }
 

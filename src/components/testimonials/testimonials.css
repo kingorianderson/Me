@@ -4,13 +4,13 @@
 }
 
 .client_avatar {
-    width: 4rem;
+    width: 3rem;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
-    /*margin: 0 auto 1rem;*/
+    /*margin: 0 auto 1rem;
+    border: 0.4rem solid var(--container-color);*/
     margin-bottom: 1rem;
-    border: 0.4rem solid var(--container-color);
 }
 
 .testimonial {
@@ -21,9 +21,14 @@
     user-select: none;
 }
 
+.client_name {
+    color: var();
+}
+
 .client_review {
-    color: var(--text-color-light);
-    font-weight: 300;
+    color: var(--title-color);
+    font-weight: 200;
+    font-size: var(--smaller-font-size);
     display: block;
    /* width: 80%;*/
     margin: 0.8rem auto 0;

@@ -51,17 +51,17 @@ export const Data = [
 
   export const testimonial = [
     {
-      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      avatar: "https://i.ibb.co/4pjWmWT/Profile.png",
       name: "Mwangi j.",
       review: "The attention to detail provided was impressive and his customer service skills are excellent.",
     },
     {
-      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      avatar: "https://i.ibb.co/4pjWmWT/Profile.png",
       name: "Wangari R.",
       review: "I chatted with King'ori. He was very helpful and answered all my questions concerning my web design.",
     },
     {
-      avatar: "https://i.ibb.co/vDchMzb/avatar.png",
+      avatar: "https://i.ibb.co/4pjWmWT/Profile.png",
       name: "Kipkorir A.",
       review: "We are extremely satisfied with the work he has provided for us and would encourage you to use him in design work for your organisation.",
     }

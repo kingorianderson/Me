@@ -14,8 +14,8 @@ const Card = ({ item }) => {
                 </div>
                   <h3>{Val.title}</h3>
                   <div className="portfolio_item-btn">
-              <a href={Val.github} className='btn' target='_blank'>Github</a>
-              <a href={Val.demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+              <a href={Val.github} className='gallery_btn' target='_blank'>Github</a>
+              <a href={Val.demo} className='gallery_btn gallery_btn-primary' target='_blank'>Live Demo</a>
               </div>
               </article>
               
