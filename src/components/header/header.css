@@ -1,12 +1,12 @@
 header {
-    height: 100vh;
+    height: 80vh;
     padding-top: 2.5rem;
     overflow: hidden;
 }
 
 .header_container {
     text-align: center;
-    height: 100%;
+    height: 50%;
     position: relative;
 }
 
@@ -43,7 +43,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 35%;
+   /*bottom: 35%;*/
 }
 
 .header_socials::after {
@@ -70,7 +70,7 @@ header {
     height: 22rem;
     position: absolute;
     left: calc(50% - 11rem); 
-    margin-top: 4rem;
+   /* margin-top: 4rem;*/
     border-radius: 50%;
     overflow: hidden;
     justify-content: center;
@@ -92,7 +92,7 @@ header {
       color: var(--first-color);
       position: absolute;
       right: -2.3rem;
-      bottom: 38%;
+      /*bottom: 38%;*/
      row-gap: 2.25rem;
      display: grid;
       justify-items: center;
@@ -108,8 +108,12 @@ header {
       transform: rotate(-90deg);
   }
 
+  .header-items{
+      margin-top: 4rem;
+  }
+
   
-/*** MEDIA QUERIES (SMALL DEVICES) ***/
+/*** MEDIA QUERIES (SMALL DEVICES) 
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
@@ -124,8 +128,6 @@ header {
        
        
     } 
-
-    /*** Header Btn ***/
 .header_btn {
     margin-top: .5rem;
     display: flex;
@@ -134,11 +136,12 @@ header {
 }
     
 }
- 
 
-/*** MEDIA QUERIES (MEDIUM DEVICES) ***/
+
+
 @media screen and (max-width: 1024px) {
     header {
         height: 86vh;
     }
 }
+*/

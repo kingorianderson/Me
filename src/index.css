@@ -123,11 +123,10 @@ h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
-/*
+
 section {
     margin-top: 8rem;
-    height: 100vh;
-}*/
+}
 
 section > h2, section > h5 {
     text-align: center;
@@ -226,7 +225,11 @@ img {
 }
 
 /*** MEDIA QUERIES (SMALL DEVICES) ***/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 360px) {
+  .container {
+    width: var(--container-width-small);
+}
+
   section {
  
   }
@@ -244,20 +247,16 @@ img {
     width: 10rem;
     height: 10rem;
     left: calc(50% - 5rem);
-    margin-top: 1.5rem;
   }
 
   .header_social-link {
     margin-bottom: 0.5rem;
+    justify-content: space-between;
   }
 
-  .header_socials {
-    bottom: 21%;
-  }
-
-  .scroll_down {
-    bottom: 27%;
-  }
+  .header-items{
+    margin-top: 1.5rem;
+}
 
   .tab-nav {
      justify-content: left;
@@ -271,7 +270,6 @@ img {
     top:   55%;
     right: 20px;
   }
-
 
   .testimonial {
     padding: 1.5rem;
@@ -291,6 +289,23 @@ img {
   margin: 0 auto 0;
 }
 
+
+.btn, .btn-primary, .gallery_btn, .gallery_btn-primary {
+  font-size: small;
+  padding: 10px;
+}
+
+header {
+ height: 100vh;
+}
+
+.header_btn {
+margin-top: .5rem;
+display: flex;
+gap: 1.2rem;
+
+}
+
 .gallery_btn {
   margin: 5px;
 }
@@ -300,7 +315,7 @@ img {
 
 
 
-/*** MEDIA QUERIES (SMALL DEVICES) ***/
+/*** MEDIA QUERIES (SMALL DEVICES) 
 @media screen and (max-width: 600px) {
     .container {
         width: var(--container-width-small);

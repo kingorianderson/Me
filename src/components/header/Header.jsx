@@ -17,6 +17,7 @@ const Header = () => {
         <h1>King'ori Anderson</h1>
         <h5 className="text-light">Frontend Developer</h5>
         <BTN/>
+        <div className="header-items">
         <HeaderSocials/>
 
         <div className='profile'>
@@ -28,6 +29,7 @@ const Header = () => {
            <div className='scroll_icon'><BsMouseFill/> </div>
            <div  className='scroll_name'>Scroll Down</div>
         </a>
+        </div>
       </div>
     </header>
   ) 

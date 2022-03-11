@@ -6,10 +6,10 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
     <>
       <div className="portfolio_filters">
       <span
-          className="work_item active-portfolio"
+          className=""
           onClick={() => setItem(Data)}
         >
-          All
+          
         </span>
         {menuItems.map((Val, id) => {
           return (

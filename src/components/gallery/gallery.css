@@ -32,6 +32,11 @@
     background-color: var(--first-color);
 }
 
+.work_item:active {
+    color: var(--container-color);
+    background-color: var(--first-color);
+}
+
 .portfolio_item {
     background: var(--first-color);
     padding: 1.2rem;
