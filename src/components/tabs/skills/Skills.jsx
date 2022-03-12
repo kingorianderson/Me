@@ -2,18 +2,20 @@ import React from 'react'
 import { useState } from "react";
 import './skills.css'
 import { BiCodeCurly, BiServer } from 'react-icons/bi'
-import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import { MdCropRotate } from 'react-icons/md'
 import { FaNetworkWired } from 'react-icons/fa'
 
 
 
+const Skills = () => {
+  const [selected, setSelected] = useState(null);
 
-function Skills() {
-  const [toggleState, setToggleState] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggleState(index);
+  const toggle = (index) => {
+    if (selected === index) {
+      return setSelected(null);
+    }
+    setSelected(index);
   };
 
 
@@ -31,18 +33,18 @@ function Skills() {
                 <i className="skills__icon"><BiCodeCurly/> </i>
 
              
-                <div className={toggleState === 1 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(1)}>
+                <div className="tabskills active-tabskills"
+          onClick={() => toggle(index)}>
                   <h3>Frontend Skills</h3>
                   <span className="skills__subtitle">More than 2 years</span>
                 </div>
-                <i className="skills__icon skills__arrow"><IoIosArrowDown/> </i>
+                <i className="skills__icon skills__arrow"></i>
               </div>
              
 
               <div className="content-tabs">
         <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
+          className={selected === index ? "content  active-content" : "content"}
         >
               <div className="skills__list grid">
                
@@ -99,18 +101,18 @@ function Skills() {
                 <i className=" skills__icon"><BiServer/></i>
 
                
-                <div className={toggleState === 2 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(2)}>
+                <div className="tabskills active-tabskills"
+          onClick={() => toggle(index)}>
                   <h3>Backend Skills</h3>
                   <span className="skills__subtitle">More than 1 years</span>
                 </div>
-                <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
+                <i className="skills__icon skills__arrow"></i>
               </div>
 
 
               <div className="content-tabs">
         <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
+          className={selected === index ? "content  active-content" : "content"}
         >
              
               <div className="skills__list grid">
@@ -156,19 +158,19 @@ function Skills() {
               <div className="skills__header">
                 <i className="skills__icon"><MdCropRotate/></i>
 
-                <div className={toggleState === 3 ? "tabskills active-tabskills" : "tabskills"}
-          onClick={() => toggleTab(3)}>
+                <div className="tabskills active-tabskills"
+          onClick={() => toggle(index)}>
                   <h3>Design Skills</h3>
                   <span className="skills__subtitle">More than 5 years</span>
                 </div>
-                <i className="skills__icon skills__arrow"><IoIosArrowDown/></i>
+                <i className="skills__icon skills__arrow"></i>
               </div>
 
 
 
               <div className="content-tabs">
         <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
+          className={selected === index ? "content  active-content" : "content"}
         >
               <div className="skills__list grid">
                

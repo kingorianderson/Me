@@ -225,14 +225,11 @@ img {
 }
 
 /*** MEDIA QUERIES (SMALL DEVICES) ***/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 539px) {
   .container {
     width: var(--container-width-small);
 }
 
-  section {
- 
-  }
   .header_btn {
     flex-direction: column;
     text-align: center;
@@ -295,10 +292,6 @@ img {
   padding: 10px;
 }
 
-header {
- height: 100vh;
-}
-
 .header_btn {
 margin-top: .5rem;
 display: flex;
@@ -309,9 +302,119 @@ gap: 1.2rem;
 .gallery_btn {
   margin: 5px;
 }
+
+.container.contact_container {
+  width: 90%;
+  grid-template-columns: 1fr;
+  /*gap: 12%;
+  row-gap: 2rem;*/
+
+}
+
+.contact_form-tag {
+  position: absolute;
+  left: 3rem;
+  margin-top: -.90rem;
+  font-size: var(--small-font-size);
+  padding: 0.25rem;
+  color: var(--first-color);
+  background-color: var(--body-color);
+  z-index: 10;
+}
   
 }
 
+
+@media screen and (min-width: 674px) {
+  .container.contact_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 37% 58%;
+    gap: 5%;
+    /*row-gap: 2rem;*/
+}
+
+
+.contact_form-tag {
+  position: absolute;
+  left: 30rem;
+  margin-top: -.90rem;
+  font-size: var(--small-font-size);
+  padding: 0.25rem;
+  color: var(--first-color);
+  background-color: var(--body-color);
+  z-index: 10;
+}
+}
+
+@media screen and (min-width: 540px) and (max-width: 860px) {
+
+.container {
+    width: var(--container-width-medium);
+}
+  
+.container.contact_container {
+  width: 90%;
+  grid-template-columns: 1fr;
+}
+
+.testimonial {
+  padding: 1.5rem;
+}
+
+.client_avatar {
+width: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.container.testimonials_container {
+width: 85%;
+padding-bottom: 2rem;
+}
+
+.client_review {
+margin: 0 auto 0;
+}
+
+
+.contact_form-tag {
+  position: absolute;
+  left: 6rem;
+  margin-top: -.90rem;
+  font-size: var(--small-font-size);
+  padding: 0.25rem;
+  color: var(--first-color);
+  background-color: var(--body-color);
+  z-index: 10;
+}
+}
+
+@media screen and (min-width: 861px) and (max-width: 1200px) {
+  
+.container {
+  width: var(--container-width-medium);
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 635px) and (max-width: 701px) {
+  .gallery_btn, .gallery_btn-primary {
+    font-size: small;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 976px) and (max-width: 1075px) {
+  .gallery_btn, .gallery_btn-primary {
+    font-size: small;
+    padding: 10px;
+  }
+}
+  
 
 
 

@@ -24,13 +24,13 @@ const Header = () => {
           <img src={PROFILE} alt='profile' className='profile-pic'/>
         </div>
 
-      
          <a href='#contact' className='scroll_down'>
            <div className='scroll_icon'><BsMouseFill/> </div>
            <div  className='scroll_name'>Scroll Down</div>
         </a>
         </div>
       </div>
+      <br/>
     </header>
   ) 
 }

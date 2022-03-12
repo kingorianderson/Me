@@ -7,7 +7,7 @@ import Services from './components/services/Services'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import Tabs from './components/tabs/Tabs'
+import Mimi from './components/mimi/Mimi'
 import Gallery from './components/gallery/Gallery'
 
 
@@ -19,7 +19,7 @@ const App = () => {
        <Header/>
        <Nav/>
        
-       <Tabs/>
+       <Mimi/>
        <Services/>
        <Gallery/>
        <Testimonials/>

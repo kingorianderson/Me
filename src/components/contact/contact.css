@@ -2,8 +2,8 @@
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
-    /*gap: 12%;*/
-    row-gap: 2rem;
+    gap: 12%;
+    /*row-gap: 2rem;*/
 
 }
 
@@ -47,12 +47,11 @@
 .contact_button-icon {
     font-size: 1.5rem;
     transition: 0.4s;
-    margin-bottom: -0.75rem;
+    margin-bottom: -0.60rem;
 }
 
-
 .contact_button:hover .contact_button-icon {
-    transform: translateX(0.25rem);
+    transform: translateX(0.3rem);
     color: var(--container-color);
 }
 
@@ -76,7 +75,7 @@ textarea {
 
 .contact_form-tag {
     position: absolute;
-    left: 3rem;
+    left: 55rem;
     margin-top: -.90rem;
     font-size: var(--small-font-size);
     padding: 0.25rem;

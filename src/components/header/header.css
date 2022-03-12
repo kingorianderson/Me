@@ -1,26 +1,23 @@
 header {
-    height: 80vh;
     padding-top: 2.5rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    height: 35rem;
 }
 
 .header_container {
     text-align: center;
-    height: 50%;
+    height: 100%;
     position: relative;
+    border: 1px solid black;
 }
 
 /** Nav Head **/
 .head {
-    
     top: 0;
     left: 0;
-   
     display: flex;
     background-color: transparent;
-    
     justify-content: space-between;
-    
     align-items: center;
 }
 .nav_logo {
