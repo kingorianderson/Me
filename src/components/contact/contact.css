@@ -75,7 +75,7 @@ textarea {
 
 .contact_form-tag {
     position: absolute;
-    left: 55rem;
+    /*left: 55rem;*/
     margin-top: -.90rem;
     font-size: var(--small-font-size);
     padding: 0.25rem;

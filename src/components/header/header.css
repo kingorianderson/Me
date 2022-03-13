@@ -1,37 +1,37 @@
 header {
-    padding-top: 2.5rem;
+    padding-top: 4rem;
     /*overflow: hidden;*/
-    height: 35rem;
+    height: 90vh;
 }
 
 .header_container {
     text-align: center;
     height: 100%;
     position: relative;
-    border: 1px solid black;
+    /*: 1px solid black;*/
 }
 
 /** Nav Head **/
 .head {
+    /*position: fixed;*/
     top: 0;
     left: 0;
     display: flex;
     background-color: transparent;
+}
+.top_nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav_logo {
-   
 }
 
 /*** Header Btn ***/
 .header_btn {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
 }
-
 /*** Header Socials ***/
 .header_socials {
     display: flex;
@@ -40,7 +40,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-   /*bottom: 35%;*/
+    /*bottom: 10%;*/
 }
 
 .header_socials::after {
@@ -89,24 +89,22 @@ header {
       color: var(--first-color);
       position: absolute;
       right: -2.3rem;
-      /*bottom: 38%;*/
+      /*bottom: 15%;*/
      row-gap: 2.25rem;
      display: grid;
       justify-items: center;
   }
 
   .scroll_icon {
-   
       font-size: 1.25rem;
   }
 
   .scroll_name {
-       
       transform: rotate(-90deg);
   }
 
   .header-items{
-      margin-top: 4rem;
+      margin-top: 6rem;
   }
 
   

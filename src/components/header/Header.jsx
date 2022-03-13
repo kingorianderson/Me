@@ -13,8 +13,8 @@ const Header = () => {
       
       <div className="container header_container">
         <Nav/>
-        <h5>Hello I'am</h5>
-        <h1>King'ori Anderson</h1>
+        <h5 className='salute'>Hello I'am</h5>
+        <h1 className='myname'>King'ori Anderson</h1>
         <h5 className="text-light">Frontend Developer</h5>
         <BTN/>
         <div className="header-items">

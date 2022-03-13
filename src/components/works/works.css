@@ -1,15 +1,32 @@
 
+  .item {
+    background: #f0ebe1;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+  }
 
-.tabskills:active{
-    cursor: pointer;
-    color: var(--first-color);
-    
+  .content.show {
+    height: auto;
+    max-height: 9999px;  
+  }
+  
+  .content {
+    overflow: hidden;
+  }
+  .content.show {
+    height: auto;
+    max-height: 9999px;
   }
   
   
-  /*==================== SKILLS ====================*/
   .skills__container {
       /*row-gap: 0;*/
+      display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       margin-right: auto;
     }
@@ -42,8 +59,18 @@
     }
     .skills__list {
       row-gap: 1.5rem;
-      padding-left: 1.7rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin-bottom: 1.5rem;
+      animation: fade 0.75s ease forwards;
     }
+  
+  @keyframes fade {
+
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  
+  }
     .skills__titles {
       display: flex;
       justify-content: space-between;
@@ -59,7 +86,7 @@
       border-radius: .25rem;
     }
     .skills__bar {
-      background-color: var( );
+      background-color: var(--first-color-lighter);
     }
     .skills__percentage {
       display: block;
@@ -74,11 +101,11 @@
     .skills__js {
       width: 60%;
     }
-    .skills__sass {
-      width: 50%;
+    .skills__react {
+      width: 58%;
     }
-    .skills__php {
-      width: 40%;
+    .skills__mongo {
+      width: 45%;
     }
     .skills__mysql {
       width: 50%;
@@ -94,6 +121,9 @@
     }
     .skills__photoshop {
       width: 90%;
+    }
+    .skills__figma {
+      width: 85%;
     }
     .skills__routing {
       width: 50%;
@@ -113,6 +143,4 @@
       height: max-content;
       margin-bottom: var(--mb-2-5);
     }
-    .skills__open .skills__arrow {
-      transform: rotate(-180deg);
-    }
+   

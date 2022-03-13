@@ -1,3 +1,142 @@
+import { BiCodeCurly, BiServer } from 'react-icons/bi'
+import { MdCropRotate } from 'react-icons/md'
+import { FaNetworkWired } from 'react-icons/fa'
+
+export const skills = [
+  {
+  icon:
+   <>
+  <BiCodeCurly/>
+  </>,
+  heading: "Frontend Skills",
+  subheading: "More than 2 years",
+  skill_one: "HTML",
+  percent_one: "90%",
+  skillsbar_one:
+   <>
+   <div className="skills__percentage skills__html"></div>
+  </>,
+
+  skill_two: "CSS",
+  percent_two: "80%",
+  skillsbar_two: 
+  <>
+   <div className="skills__percentage skills__css"></div>
+  </>,
+
+  skill_three: "JavaScript",
+  percent_three: "60%",
+  skillsbar_three: 
+  <>
+  <div className="skills__percentage skills__js"></div>
+  </>,
+
+  skill_four: "React",
+  percent_four: "58%",
+  skillsbar_four:
+  <>
+  <div className="skills__percentage skills__react"></div>
+  </>,
+},
+{
+  icon:
+   <>
+  <BiServer/>
+  </>,
+  heading: "Backend Skills",
+  subheading: "More than 1 years",
+  skill_one: "Node JS",
+  percent_one: "55%",
+  skillsbar_one:
+   <>
+   <div className="skills__percentage skills__node"></div>
+  </>,
+
+  skill_two: "MySQL",
+  percent_two: "50%",
+  skillsbar_two: 
+  <>
+   <div className="skills__percentage skills__mysql"></div>
+  </>,
+
+  skill_three: "MongoDB",
+  percent_three: "45%",
+  skillsbar_three: 
+  <>
+  <div className="skills__percentage skills__mongo"></div>
+  </>,
+},
+{
+  icon:
+   <>
+  <MdCropRotate/>
+  </>,
+  heading: "Design Skills",
+  subheading: "More than 5 years",
+  skill_one: "Photoshop",
+  percent_one: "90%",
+  skillsbar_one:
+   <>
+   <div className="skills__percentage skills__photoshop"></div>
+  </>,
+
+  skill_two: "Illustrator",
+  percent_two: "87%",
+  skillsbar_two: 
+  <>
+   <div className="skills__percentage skills__illustrator"></div>
+  </>,
+
+  skill_three: "Figma",
+  percent_three: "85%",
+  skillsbar_three: 
+  <>
+  <div className="skills__percentage skills__figma"></div>
+  </>,
+
+  skill_four: "XD",
+  percent_four: "80%",
+  skillsbar_four:
+  <>
+  <div className="skills__percentage skills__xd"></div>
+  </>,
+},
+{
+  icon:
+   <>
+  <FaNetworkWired/>
+  </>,
+  heading: "Networking Skills",
+  subheading: "More than 6 months",
+  skill_one: "Routing protocols configuration",
+  percent_one: "50%",
+  skillsbar_one:
+   <>
+   <div className="skills__percentage skills__routing"></div>
+  </>,
+
+  skill_two: "Cisco IOS Command",
+  percent_two: "55%",
+  skillsbar_two: 
+  <>
+   <div className="skills__percentage skills__cisco"></div>
+  </>,
+
+  skill_three: "Switching and VLAN configuration",
+  percent_three: "53%",
+  skillsbar_three: 
+  <>
+  <div className="skills__percentage skills__switcing"></div>
+  </>,
+
+  skill_four: "XD",
+  percent_four: "80%",
+  skillsbar_four:
+  <>
+  <div className="skills__percentage skills__xd"></div>
+  </>,
+}
+];
 export const Data = [
     {
       id: "1",
