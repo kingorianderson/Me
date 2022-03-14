@@ -19,7 +19,8 @@
   --hue-color: 170; 
 
   /* HSL color mode */
-
+  --sat: 66%;
+  --lig: 75%;
   --first-color: hsl(var(--hue-color), 80%, 30%);  /* hsl(170, 80%, 30%) */
   --first-color-second: #43cbb5; /* hsl(170, 57%, 53%)*/
   --first-color-alt: #14b89c; /* hsl(170, 80%, 40%)*/
@@ -306,8 +307,8 @@ gap: 1.2rem;
 .container.contact_container {
   width: 90%;
   grid-template-columns: 1fr;
-  /*gap: 12%;
-  row-gap: 2rem;*/
+  gap: 3%;
+ /* row-gap: 2rem;*/
 
 }
 
@@ -367,6 +368,10 @@ gap: 1.2rem;
   margin: 0 auto 0;
   }
   
+.container.contact_container {
+  gap: 3%;
+}
+
   .contact_form-tag {
     left: 9%;
   }
@@ -381,10 +386,13 @@ gap: 1.2rem;
     gap: 5%;
     /*row-gap: 2rem;*/
 }
-
-
+  
 .contact_form-tag {
   left: 46%;
+}
+
+.contact_title {
+  display: none;
 }
 }
 
@@ -415,12 +423,20 @@ gap: 1.2rem;
 .contact_form-tag {
   left: 45%;
 }
+
+.contact_title {
+  display: none;
+}
 }
 
 @media screen and (min-width: 1201px) {
   .contact_form-tag {
     left: 47%;
   }
+  
+.contact_title {
+  display: none;
+}
 }
 
 

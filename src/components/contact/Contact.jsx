@@ -31,7 +31,8 @@ const Contact = () => {
           </article>
           
         </div>
-
+        <div>
+          <h3 className="contact_title">Write me a message</h3>
         <form action="">
           <div className='contact_form-div'>
              <label for='' className='contact_form-tag'>Names</label>
@@ -48,6 +49,7 @@ const Contact = () => {
 
            <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
+        </div>
       </div>
     </section>
   )

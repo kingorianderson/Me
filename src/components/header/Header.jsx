@@ -10,7 +10,7 @@ import { BsMouseFill } from 'react-icons/bs'
 const Header = () => {
   return (
     <header>
-      
+      <section id='home'>
       <div className="container header_container">
         <Nav/>
         <h5 className='salute'>Hello I'am</h5>
@@ -31,6 +31,7 @@ const Header = () => {
         </div>
       </div>
       <br/>
+      </section>
     </header>
   ) 
 }

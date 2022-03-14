@@ -15,10 +15,13 @@ nav {
 }
 
 nav a {
+    cursor: pointer;
     color: white;
     background: transparent;
     padding: 0.7rem;
     border-radius: 50%;
+    border: 2rem;
+    border-color: white;
     display: flex;
     /*color: var(--first-color);*/
     font-size: 1.3rem;
@@ -28,7 +31,12 @@ nav a:hover {
     color: white;
     background: var(--first-color);
 }
-/*
+
 nav a.active {
-    background: var(--first-color);
-}*/
+    background: linear-gradient(180deg,
+                hsla(var(--hue-color), var(--sat), var(--lig), 1), 
+                hsla(var(--hue-color), var(--sat), var(--lig), 0.2)
+    );
+    box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+    border-color: white;
+}
