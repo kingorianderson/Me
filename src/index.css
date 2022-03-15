@@ -186,14 +186,13 @@ img {
     width: var(--container-width-small);
 }
 
-
+/*
 section {
   margin-top: 2rem;
-}
+}*/
 
 header {
   padding-top: 0rem;
-  /*overflow: hidden;*/
   height: 90vh;
 }
 
@@ -232,6 +231,7 @@ header {
 
   .header-items{
     margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
   .tab-nav {
@@ -270,7 +270,13 @@ header {
   font-size: small;
   padding: 10px;
 }
-
+.header_btn {
+  margin-top: .5rem;
+  display: flex;
+  gap: 1.2rem;
+  
+  }
+  
 .gallery_btn {
   margin: 5px;
 }

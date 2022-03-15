@@ -2,8 +2,19 @@ import React from 'react'
 import './contact.css'
 import { MdEmail } from 'react-icons/md'
 import { BsWhatsapp, BsArrowRight } from 'react-icons/bs'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5inj44i', 'template_cu2q33a', form.current, 'QZnU7X_UBGaSDydDj')
+      
+    e.target.reset()
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -33,7 +44,7 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="contact_title">Write me a message</h3>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div className='contact_form-div'>
              <label for='' className='contact_form-tag'>Names</label>
              <input type="text" name='name' placeholder='Insert your name' required/>
