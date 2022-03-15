@@ -22,13 +22,13 @@
   --sat: 66%;
   --lig: 75%;
   --first-color: hsl(var(--hue-color), 80%, 30%);  /* hsl(170, 80%, 30%) */
-  --first-color-second: #43cbb5; /* hsl(170, 57%, 53%)*/
-  --first-color-alt: #14b89c; /* hsl(170, 80%, 40%)*/
-  --first-color-lighter: #b6fcf0; /*hsl(170, 92%, 85%)*/
-  --title-color: hsl(170,15,9);/*hsl(170, 15%, 9%)*/
-  --text-color: #364946; /*hsl(170, 15%, 25%)*/
-  --text-color-light: #7b9d98; /*hsl(170, 15%, 55%)*/
-  --body-color: hsl(170, 97%, 97%); /*hsl(170, 97%, 97%)*/
+  --first-color-second: #43cbb5; /* hsl(var(--hue-color), 57%, 53%)*/
+  --first-color-alt: #14b89c; /* hsl(var(--hue-color), 80%, 40%)*/
+  --first-color-lighter: #b6fcf0; /*hsl(var(--hue-color), 92%, 85%)*/
+  --title-color: hsl(170,15,9);/*hsl(var(--hue-color), 15%, 9%)*/
+  --text-color: #364946; /*hsl(var(--hue-color), 15%, 25%)*/
+  --text-color-light: #7b9d98; /*hsl(var(--hue-color), 15%, 55%)*/
+  --body-color: hsl(170, 97%, 97%); /*hsl(var(--hue-color), 97%, 97%)*/
   --container-color: #fff;
 
   /** Transition **/
@@ -38,7 +38,7 @@
   --container-width-medium: 85%;
   --container-width-small: 90%;
 
-  /*========== Font and typography ==========*/
+  /*** Font and typography ***/
   --body-font: 'Poppins', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -51,11 +51,11 @@
   --smaller-font-size: .75rem;
 
   
-  /*========== Font weight ==========*/
+  /*** Font weight ***/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margin Bottom ==========*/
+  /*** Margin Bottom ***/
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
@@ -66,14 +66,14 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem; 
 
-   /*========== z index ==========*/
+   /*** z index ***/
    --z-tooltip: 10;
    --z-fixed: 100;
    --z-modal: 1000;
 }
 
 
-/*==================== LAYOUT ====================*/
+/*** LAYOUT ***/
 
   .grid {
     display: grid;
@@ -152,51 +152,6 @@ a:hover {
     color: var(--first-color-second);
 }
 
-
-/*==================== BUTTONS ====================*/
-.button {
-    display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
-  }
-  .home-contact-button {
-    margin-top: var(--mb-1-5);
-  }
-  .button:hover {
-    background-color: var(--first-color-alt);
-  }
-  .button__icon {
-    font-size: 1.25rem;
-    margin-left: var(--mb-0-5);
-    transition: .3s;
-  }
-  .button--white {
-    background-color: #fff;
-    color: var(--first-color);
-  }
-  .button--white:hover{
-    background-color: #fff;
-  }
-  .button--flex {
-    display: inline-flex;
-    align-items: center;
-  }
-  .button--small{
-    padding: .75rem 1rem;
-  }
-  .button--link{
-    padding: 0;
-    background-color: transparent;
-    color: var(--first-color);
-  }
-  .button--link:hover{
-    background-color: transparent;
-    color: var(--first-color-alt);
-  }
-
 .btn {
     width: max-content;
     display: inline-block;
@@ -231,15 +186,38 @@ img {
     width: var(--container-width-small);
 }
 
+
+section {
+  margin-top: 2rem;
+}
+
+header {
+  padding-top: 0rem;
+  /*overflow: hidden;*/
+  height: 90vh;
+}
+
   .header_btn {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 1.2rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 
   .download-btn {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
+
+  .salute {
+    margin-top: 0rem;
+}
+
+.myname,
+.text-light {
+    margin-top: 0.5rem;
+}
 
   .profile {
     width: 10rem;
@@ -253,7 +231,7 @@ img {
   }
 
   .header-items{
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 
   .tab-nav {
@@ -293,25 +271,14 @@ img {
   padding: 10px;
 }
 
-.header_btn {
-margin-top: .5rem;
-display: flex;
-gap: 1.2rem;
-
-}
-
 .gallery_btn {
   margin: 5px;
 }
 
-.container.contact_container {
-  width: 90%;
-  grid-template-columns: 1fr;
-  gap: 3%;
- /* row-gap: 2rem;*/
 
+.contact_option {
+  margin-bottom: 2%;
 }
-
 .contact_form-tag {
   left: 15%;
 }

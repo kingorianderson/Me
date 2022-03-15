@@ -2,7 +2,7 @@ import React from 'react'
 import './nav.css'
 import { BiBook, BiHomeAlt, BiMessageSquareDetail } from 'react-icons/bi'
 import { AiOutlineUser } from 'react-icons/ai'
-import { RiServiceLine } from 'react-icons/ri'
+import { RiServiceLine, RiGalleryFill } from 'react-icons/ri'
 import { Link } from 'react-scroll'
 
 const Nav = () => {
@@ -38,7 +38,7 @@ const Nav = () => {
       spy={true}
       smooth={true}
       offset={0}
-      duration={500}><BiHomeAlt/></Link>
+      duration={500}><RiGalleryFill/></Link>
 
 <Link
       activeClass="active"
