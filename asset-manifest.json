@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.560f8e4c.css",
+    "main.js": "/me/static/js/main.09437919.js",
+    "static/media/profile.png": "/me/static/media/profile.eda9ad9f06176ff22fc9.png",
+    "static/media/Kingori-Cv.pdf": "/me/static/media/Kingori-Cv.e83747cf513e0b21a7f1.pdf",
+    "index.html": "/me/index.html",
+    "main.560f8e4c.css.map": "/me/static/css/main.560f8e4c.css.map",
+    "main.09437919.js.map": "/me/static/js/main.09437919.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.560f8e4c.css",
+    "static/js/main.09437919.js"
+  ]
+}
