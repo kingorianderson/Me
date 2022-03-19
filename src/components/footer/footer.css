@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-    color: var(--text-color);
+    color: var(--text-color-alt);
 }
 
 footer a:hover {
@@ -15,6 +15,7 @@ footer a:hover {
 }
 
 .footer_logo {
+    color: var(--text-color-alt);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem; 
@@ -38,7 +39,7 @@ footer a:hover {
 }
 
 .footer_socials a {
-    background: var(--text-color);
+    background: var(--text-color-alt);
     color: var(--container-color);
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -48,10 +49,10 @@ footer a:hover {
 
 .footer_socials a:hover {
     background: var(--container-color);
-    color: var(--text-color);
+    color: var(--text-color-alt);
 }
 
 .footer_copyright {
     margin-bottom: 4rem;
-    color: var(--text-color);
+    color: var(--text-color-alt);
 }

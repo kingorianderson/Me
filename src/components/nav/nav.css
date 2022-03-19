@@ -15,6 +15,7 @@ nav {
 }
 
 nav a {
+    transition: var(--transition);
     cursor: pointer;
     background: transparent;
     padding: 0.7rem;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './testimonials.css'
-import { testimonial } from "./../../Data"
+import { testimonial} from '../data'
+
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -10,8 +11,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 
 const Testimonials = () => {
   return (

@@ -1,11 +1,8 @@
 import React from 'react'
 import { useState } from "react";
 import './works.css'
-import { skills } from "./../../Data"
+import { skills } from '../data'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
-
-
-
 
 const Works = () => {
   const [selected, setSelected] = useState(null);
@@ -17,7 +14,7 @@ const Works = () => {
     setSelected(index);
   };
   return ( 
-
+// Skills accordion collapsible
     <section className="section" id='work'>
         <h5>My Skills</h5>
         <h2>Experience</h2>
@@ -28,7 +25,7 @@ const Works = () => {
             <div className="skills__content">
               <div className="skills__header">
                 <i className="skills__icon">{item.icon}</i>
-
+ 
         
                 <div className="tabskills active-tabskills" onClick={() => toggle(index)}>
                   <h3>{item.heading}</h3>

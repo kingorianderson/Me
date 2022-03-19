@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Data } from "./../../Data"
+import { Data } from "../data"
 import Card from "./Card";
 import Buttons from "./Buttons";
 import './gallery.css'
+
+
 
 const File = () => {
   const [item, setItem] = useState(Data);

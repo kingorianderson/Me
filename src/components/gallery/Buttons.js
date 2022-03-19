@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./../../Data";
+import Data from '../data'
 
 const Buttons = ({ filterItem, setItem, menuItems }) => {
   return (

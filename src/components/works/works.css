@@ -14,20 +14,11 @@
     height: auto;
     max-height: 9999px;  
   }
-  
-  .content {
-    overflow: hidden;
-  }
-  .content.show {
-    height: auto;
-    max-height: 9999px;
-  }
-  
-  
+   
   .skills__container {
       /*row-gap: 0;*/
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       margin-right: auto;
     }
     .skills__header {
@@ -40,7 +31,6 @@
     .skills__arrow {
       font-size: 1.8rem;
       color: var(--first-color);
-      
     }
     .skills__icon {
       margin-right: .5rem;
@@ -55,7 +45,7 @@
     }
     .skills__arrow {
       margin-left: auto;
-      transition: .4s;
+      transition: var(--transition);
     }
     .skills__list {
       row-gap: 1.5rem;
@@ -112,6 +102,9 @@
     }
     .skills__node {
       width: 55%;
+    }
+    .skills__next {
+      width: 30%;
     }
     .skills__xd {
       width: 80%;
