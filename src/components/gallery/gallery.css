@@ -79,7 +79,7 @@
 }
 
 .gallery_btn:hover {
-    background: var(--first-color-second);
+    background: var(--first-color-second-alt);
     color: var(--container-color);
     border-color: transparent
 }

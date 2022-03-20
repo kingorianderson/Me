@@ -38,7 +38,7 @@ const Nav = () => {
 //  <i className="change-theme" id='theme-button'>OOO</i>
   return (
     <div className='head'>
-      <div className='top_nav container'>
+      <div className='top_nav'>
         <a href="" className='navs_logo'>Kingori.</a>
         
         <i

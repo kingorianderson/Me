@@ -10,15 +10,15 @@ const Footer = () => {
       <div className='footer_logo'>King'ori.</div>
 
       <ul className='permalinks'>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#skills'>Skills</a></li>
-        <li><a href='#services'>Services</a></li>
+        <li><a href='#' className='footer_social'>Home</a></li>
+        <li><a href='#skills' className='footer_social'>Skills</a></li>
+        <li><a href='#services' className='footer_social'>Services</a></li>
       </ul>
 
       <div className="footer_socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/> </a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://facebook.com" className='footer_social'><FaFacebookF/></a>
+        <a href="https://instagram.com" className='footer_social'><FiInstagram/> </a>
+        <a href="https://twitter.com" className='footer_social'><IoLogoTwitter/></a>
       </div>
 
       <div className="footer_copyright">

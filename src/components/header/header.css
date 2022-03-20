@@ -1,6 +1,6 @@
 header {
     padding-top: 4rem;
-    /*overflow: hidden;*/
+    overflow: hidden;
     height: 90vh;
 }
 
@@ -21,8 +21,11 @@ header {
 }
 .top_nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navs_logo {
@@ -30,7 +33,10 @@ header {
     transition: var(--transition);
 } 
 
-#darkMode, .navs_logo:hover {
+#darkMode:hover{
+    color: var(--first-color-hover);
+}
+.navs_logo:hover {
     color: var(--first-color-hover);
 }
 
@@ -46,7 +52,7 @@ header {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-}
+} 
 /*** Header Socials ***/
 .header_socials {
     display: flex;
@@ -130,37 +136,3 @@ header {
   .header-items{
       margin-top: 6rem;
   }
-
-  
-/*** MEDIA QUERIES (SMALL DEVICES) 
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-
-    .profile { 
-        
-        width: 14rem;
-        height: 14rem;
-        
-        left: calc(50% - 7rem); 
-       
-       
-    } 
-.header_btn {
-    margin-top: .5rem;
-    display: flex;
-    gap: 1.2rem;
-   
-}
-    
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    header {
-        height: 86vh;
-    }
-}
-*/

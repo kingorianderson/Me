@@ -73,6 +73,13 @@ export const skills = [
   <>
   <div className="skills__percentage skills__mongo"></div>
   </>,
+
+  skill_four: "Next JS",
+  percent_four: "30%",
+  skillsbar_four: 
+  <>
+  <div className="skills__percentage skills__next"></div>
+  </>
 },
 {
   icon:
@@ -137,11 +144,11 @@ export const skills = [
   <div className="skills__percentage skills__switcing"></div>
   </>,
 
-  skill_four: "XD",
-  percent_four: "80%",
+  skill_four: "Installation",
+  percent_four: "65%",
   skillsbar_four:
   <>
-  <div className="skills__percentage skills__xd"></div>
+  <div className="skills__percentage skills__install"></div>
   </>,
 }
 ];
@@ -188,7 +195,7 @@ export const Data = [
       },
     {
       id: "6",
-      title: "Data App",
+      title: "Data App UI",
       category: "Ui",
       img: IMG6,
       github: "https://github.com/kingorianderson",

@@ -127,6 +127,9 @@
     .skills__switching {
       width: 53%;
     }
+    .skills__install {
+      width: 65%;
+    }
     
     .skills__close .skills__list {
       height: 0;

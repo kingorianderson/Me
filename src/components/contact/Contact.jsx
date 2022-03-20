@@ -35,7 +35,7 @@ const Contact = () => {
           <article className="contact_option">
             <i className='contact_option-icon'><MdEmail/></i>
             <h4>Email</h4>
-            <h5>kingorianderson@gmail.com</h5>
+            <h5>contact@kingori.co.ke</h5>
             <a href="mailto:kingorianderson@gmail.com" className='contact_button' target="_blank">
               Send a message
               <i className='contact_button-icon'><BsArrowRight/></i>
