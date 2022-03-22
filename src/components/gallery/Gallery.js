@@ -27,9 +27,8 @@ const File = () => {
             filterItem={filterItem}
             setItem={setItem}
             menuItems={menuItems}
-          />
-          <Card item={item} />
-        
+          /> 
+         <Card item={item}/>
       </section>
     </>
   );
