@@ -1,7 +1,7 @@
 header {
     padding-top: 4rem;
-    /*overflow: hidden;*/
-    height: 90vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .header_container {
@@ -92,27 +92,35 @@ header {
 
 /*** Profile ***/
 .profile { 
-    background: var(--first-color); 
-    width: 22rem;
-    height: 22rem;
+    background: radial-gradient(circle at 50% -20.47%, 
+                hsl(var(--hue-color), 80%, 85%), hsl(var(--hue-color), 80%, 80%), hsl(var(--hue-color), 80%, 75%),
+                hsl(var(--hue-color), 80%, 70%), hsl(var(--hue-color), 80%, 65%), hsl(var(--hue-color), 80%, 60%),
+                hsl(var(--hue-color), 80%, 55%), hsl(var(--hue-color), 80%, 50%), hsl(var(--hue-color), 80%, 45%),
+                hsl(var(--hue-color), 80%, 40%), hsl(var(--hue-color), 80%, 35%), hsl(var(--hue-color), 80%, 30%), 
+                hsl(var(--hue-color), 80%, 25%), hsl(var(--hue-color), 80%, 20%), hsl(var(--hue-color), 80%, 15%)
+                );
+    border-radius: 10rem 10rem 1rem 1rem;
+    width: 20rem;
+    height: 28rem;
     position: absolute;
-    left: calc(50% - 11rem); 
+    left: calc(50% - 10rem); 
    /* margin-top: 4rem;*/
-    border-radius: 50%;
     overflow: hidden;
     justify-content: center;
     justify-self: center;
+    display: flex;
+    align-items: flex-end;
    
 } 
-
+/* 
 .profile-pic {
     justify-self: center;
     display: inline;
     margin: 0 auto;
-/*left: calc(50% - 11rem);*/
+    left: calc(50% - 12rem);
     height: 100%;
     width: auto;
-  }
+  } */
 
   /*** Scroll Dowm ***/
   .scroll_down {

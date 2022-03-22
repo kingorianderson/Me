@@ -168,8 +168,8 @@ section > h2 {
     margin-bottom: 3rem;
 }
 
-.text-light {
-    color: var(--text-color);
+.text-light, .salute {
+    color: var(--title-color);
 }
 /*
 a {
@@ -221,7 +221,7 @@ section {
 
 header {
   padding-top: 1rem;
-  height: 100vmax;
+  height: 100vh;
 }
 
   .header_btn {
@@ -243,19 +243,33 @@ header {
   }
 
   .profile {
-    width: 14rem;
-    height: 14rem;
-    left: calc(50% - 7rem);
+    width: 50%;
+    height: auto;
+    left: calc(50% - 25%);
   }
+
+  .profile-pic {
+    margin-top: 3rem;
+  } 
 
   .header_social-link {
     margin-bottom: 0.5rem;
     justify-content: space-between;
   }
 
-  .header-items{
+  .header-items {
     margin-top: 3rem;
 }
+
+  /*** Header Socials ***/
+  .header_socials {
+    bottom: 15%;
+  }
+  
+    /*** Scroll Dowm ***/
+  .scroll_down { 
+    bottom: 20%;
+  }
 
 .testimonial {
     padding: 1.5rem;
@@ -303,9 +317,7 @@ header {
 
 .footer_social {
   margin-right: 1rem;
-}
-
-  
+} 
 }
 
 
