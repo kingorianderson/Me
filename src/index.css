@@ -50,55 +50,54 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+  
+ /*** Colors ***/
+  /* Change favorite color */
+  --hue-color: 170;
 }
 
 .light-mode {
-  /*** Colors ***/
-  /* Change favorite color */
-  --hue-color: 170;
-
   /* HSL color mode */
   --sat: 66%;
   --lig: 75%;
   --first-color: hsl(var(--hue-color), 80%, 30%); /* hsl(170, 80%, 30%) */
-  --first-color-second: #43cbb5; /* hsl(var(--hue-color), 57%, 53%)*/
+  --first-color-second: hsl(var(--hue-color), 57%, 53%); /*#43cbb5*/
   --first-color-second-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter-alt: hsl(var(--hue-color), 92%, 85%);
-  --first-color-hover: #43cbb5; /* hsl(var(--hue-color), 57%, 53%)*/
-  --first-color-alt: #14b89c; /* hsl(var(--hue-color), 80%, 40%)*/
-  --first-color-lighter: #b6fcf0; /*hsl(var(--hue-color), 92%, 85%)*/
-  --title-color: hsl(170, 15, 9); /*hsl(var(--hue-color), 15%, 9%)*/
-  --text-color: #364946; /*hsl(var(--hue-color), 15%, 25%)*/
-  --text-color-alt: #364946; /*hsl(var(--hue-color), 15%, 25%)*/
-  --text-color-light: #7b9d98; /*hsl(var(--hue-color), 15%, 55%)*/
-  --body-color: hsl(170, 97%, 97%); /*hsl(var(--hue-color), 97%, 97%)*/
+  --first-color-hover: hsl(var(--hue-color), 57%, 53%);
+  --first-color-alt: hsl(var(--hue-color), 80%, 40%); /*#14b89c*/
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /*#b6fcf0*/
+  --title-color: hsl(var(--hue-color), 15, 9); /*hsl(var(--hue-color), 15%, 9%)*/
+  --text-color: hsl(var(--hue-color), 15%, 25%); /*hsl(var(--hue-color), 15%, 25%)*/
+  --text-color-alt: hsl(var(--hue-color), 15%, 25%); /*hsl(var(--hue-color), 15%, 25%)*/
+  --text-color-light: hsl(var(--hue-color), 15%, 55%); /*#7b9d98*/
+  --body-color: hsl(var(--hue-color), 97%, 97%); /*hsl(var(--hue-color), 97%, 97%)*/
   --container-color: #fff;
-  background: hsl(170, 97%, 97%);
+  background: hsl(var(--hue-color), 97%, 97%);
   color: var(--text-color);
   transition: 0.25s ease-in-out;
 }
 
 /*** Variables Dark theme ***/
 .dark-mode {
-  --hue-color: 170;
 
   /* HSL color mode */
   --sat: 66%;
   --lig: 75%;
   --first-color: hsl(var(--hue-color), 80%, 30%); /* hsl(170, 80%, 30%) */
-  --first-color-second: hsl(170, 80%, 30%);
+  --first-color-second: hsl(var(--hue-color), 80%, 30%);
   --first-color-second-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsla(var(--hue-color), 80%, 30%, 0.3);
   --first-color-lighter-alt: hsl(var(--hue-color), 92%, 85%);
-  --first-color-alt: #14b89c; /* hsl(var(--hue-color), 80%, 40%)*/
-  --first-color-hover: #43cbb5; /* hsl(var(--hue-color), 57%, 53%)*/
-  --title-color: hsl(170, 8%, 95%);
-  --text-color: hsl(170, 8%, 75%);
+  --first-color-alt: hsl(var(--hue-color), 80%, 40%);
+  --first-color-hover: hsl(var(--hue-color), 57%, 53%); 
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
   --text-color-alt: hsl(var(--hue-color), 15%, 25%);
-  --input-color: hsl(170, 29%, 16%);
-  --body-color: hsl(170, 28%, 12%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: #fff;
-  background: hsl(170, 28%, 12%);
+  background: hsl(var(--hue-color), 28%, 12%);
   color: var(--text-color);
   transition: 0.25s ease-in-out;
 }
@@ -209,7 +208,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
-
+ /*** Slider ***/
 .switch {
   position: relative;
   display: inline-block;
@@ -226,8 +225,8 @@ img {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 54px;
+  height: 28px;
 }
 
 .switch input {
@@ -251,8 +250,8 @@ img {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -261,11 +260,11 @@ img {
 }
 
 input:checked + .slider {
-  background-color: #19a2c1;
+  background-color: var(--first-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px var(--first-color);
 }
 
 input:checked + .slider:before {

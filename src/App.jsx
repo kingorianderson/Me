@@ -14,26 +14,29 @@ const App = () => {
   return (
     <>
       <div className={darkMode ? "dark-mode" : "light-mode"}>
-        <div className="container header_container">
-          <div className="head">
-            <div className="top_nav">
-              <a href="" className="navs_logo">
-                Kingori.
-              </a>
+        <header id="home">
+          <div className="container header_container">
+            <div className="head">
+              <div className="top_nav">
+                <a href="" className="navs_logo">
+                  Kingori.
+                </a>
 
-              <div className="switch-checkbox">
-                <label className="switch">
-                  <input
-                    type="checkbox"
-                    onChange={() => setDarkMode(!darkMode)}
-                  />
-                  <span className="slider round"> </span>
-                </label>
+                <div className="switch-checkbox">
+                  <label className="switch">
+                    <input
+                      type="checkbox"
+                      onChange={() => setDarkMode(!darkMode)}
+                    />
+                    <span className="slider round"> </span>
+                  </label>
+                </div>
               </div>
             </div>
+
+            <Header />
           </div>
-        </div>
-        <Header />
+        </header>
         <Nav />
         <Works />
         <Services />
