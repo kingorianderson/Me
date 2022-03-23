@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { Data } from "../data"
+import { Data } from "../data";
 import Card from "./Card";
 import Buttons from "./Buttons";
-import './gallery.css'
-
-
+import "./gallery.css";
 
 const File = () => {
   const [item, setItem] = useState(Data);
@@ -22,13 +20,13 @@ const File = () => {
       <section id="portfolio">
         <h5>Recent Work</h5>
         <h2>Portfolio</h2>
-          
-          <Buttons
-            filterItem={filterItem}
-            setItem={setItem}
-            menuItems={menuItems}
-          /> 
-         <Card item={item}/>
+
+        <Buttons
+          filterItem={filterItem}
+          setItem={setItem}
+          menuItems={menuItems}
+        />
+        <Card item={item} />
       </section>
     </>
   );

@@ -1,35 +1,34 @@
-
 .client_avatar {
-    width: 3rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    /*margin: 0 auto 1rem;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  /*margin: 0 auto 1rem;
     border: 0.4rem solid var(--container-color);*/
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .testimonial {
-    background: var(--first-color);
-    /*text-align: center;*/
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
+  background: var(--first-color);
+  /*text-align: center;*/
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
 }
 
 .client_name {
-    color: var();
+  color: var();
 }
 
 .client_review {
-    color: var(--title-color);
-    font-weight: 200;
-    font-size: var(--smaller-font-size);
-    display: block;
-   /* width: 80%;*/
-    margin: 0.8rem auto 0;
+  color: var(--title-color);
+  font-weight: 200;
+  font-size: var(--smaller-font-size);
+  display: block;
+  /* width: 80%;*/
+  margin: 0.8rem auto 0;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    background: var(--first-color);
-} 
+  background: var(--first-color);
+}

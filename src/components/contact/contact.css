@@ -1,18 +1,17 @@
-
 .contact_options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .contact_option {
-    background: var(--first-color);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-   /* transition: var(--transition);*/
+  background: var(--first-color);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  /* transition: var(--transition);*/
 }
 /* 
 .contact_option:hover {
@@ -21,62 +20,61 @@
 }*/
 
 .contact_option-icon {
-    font-size: 2rem;
-    color: var(--container-color);
-    margin-bottom: 0.25rem;
-} 
+  font-size: 2rem;
+  color: var(--container-color);
+  margin-bottom: 0.25rem;
+}
 
 .contact_button {
-    color: var(--first-color-lighter-alt);
-    font-size: var(--small-font-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 0.25rem;
+  color: var(--first-color-lighter-alt);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
 }
 
 .contact_button-icon {
-    font-size: 1.5rem;
-    transition: 0.4s;
-    margin-bottom: -0.60rem;
+  font-size: 1.5rem;
+  transition: 0.4s;
+  margin-bottom: -0.6rem;
 }
 
 .contact_button:hover .contact_button-icon {
-    transform: translateX(0.3rem);
-    color: var(--container-color);
+  transform: translateX(0.3rem);
+  color: var(--container-color);
 }
 
 .contact_title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--first-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--first-color);
 }
 
 /*** Form ***/
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--first-color);
-    resize: none;
-    color: var(--text-color);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--first-color);
+  resize: none;
+  color: var(--text-color);
 }
 
 .contact_form-tag {
-    position: absolute;
-    /*left: 55rem;*/
-    margin-top: -.90rem;
-    font-size: var(--small-font-size);
-    padding: 0.25rem;
-    color: var(--first-color);
-    background-color: var(--body-color);
-   
+  position: absolute;
+  /*left: 55rem;*/
+  margin-top: -0.9rem;
+  font-size: var(--small-font-size);
+  padding: 0.25rem;
+  color: var(--first-color);
+  background-color: var(--body-color);
 }

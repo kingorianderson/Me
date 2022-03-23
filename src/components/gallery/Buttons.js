@@ -1,16 +1,11 @@
 import React from "react";
-import { Data } from '../data'
+import { Data } from "../data";
 
 const Buttons = ({ filterItem, setItem, menuItems }) => {
   return (
     <>
       <div className="portfolio_filters">
-      <span
-          className=""
-          onClick={() => setItem(Data)}
-        >
-          
-        </span>
+        <span className="" onClick={() => setItem(Data)}></span>
         {menuItems.map((Val, id) => {
           return (
             <span
@@ -22,7 +17,6 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
             </span>
           );
         })}
-        
       </div>
     </>
   );
