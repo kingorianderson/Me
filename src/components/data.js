@@ -2,7 +2,7 @@ import { BiCodeCurly, BiServer } from "react-icons/bi";
 import { MdCropRotate } from "react-icons/md";
 import { FaNetworkWired } from "react-icons/fa";
 import IMG from "../assets/profile-testimony.png";
-import IMG1 from "../assets/coffee.jpeg";
+import IMG1 from "../assets/travel.PNG";
 import IMG2 from "../assets/food.png";
 import IMG3 from "../assets/logo.jpg";
 import IMG4 from "../assets/hiking.jpg";
@@ -174,51 +174,57 @@ export const skills = [
 export const Data = [
   {
     id: "1",
-    title: "Coffee App UI",
+    title: "Travel App UI",
     category: "Ui",
     img: IMG1,
-    github: "https://github.com/kingorianderson",
-    demo: "https://github.com/kingorianderson",
+    link: "https://www.figma.com/file/rm61rFLO0ZDGcQR1HV0M8b/Android-Travel-App?node-id=11%3A1273",
+    demo: "https://www.figma.com/proto/rm61rFLO0ZDGcQR1HV0M8b/Android-Travel-App?page-id=11%3A1273&node-id=11%3A1403&viewport=241%2C48%2C0.41&scaling=min-zoom&starting-point-node-id=11%3A1573",
+    button: "Figma",
   },
   {
     id: "2",
     title: "Food Ordering",
     category: "Web",
     img: IMG2,
-    github: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson",
     demo: "https://github.com/kingorianderson",
+    button: "Github",
   },
   {
     id: "3",
     title: "Logo Design",
     category: "Design",
     img: IMG3,
-    github: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson",
     demo: "https://github.com/kingorianderson",
+    button: "Dribbble",
   },
   {
     id: "4",
     title: "Adventure Landing Page",
     category: "Web",
     img: IMG4,
-    github: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson",
     demo: "https://github.com/kingorianderson",
+    button: "Github",
   },
   {
     id: "5",
     title: "Branding",
     category: "Design",
     img: IMG5,
-    github: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson",
     demo: "https://github.com/kingorianderson",
+    button: "Dribbble",
   },
   {
     id: "6",
     title: "Data App UI",
     category: "Ui",
     img: IMG6,
-    github: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson",
     demo: "https://github.com/kingorianderson",
+    button: "Figma",
   },
 ];
 
