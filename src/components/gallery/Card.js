@@ -12,8 +12,8 @@ const Card = ({ item }) => {
               </div>
               <h3>{Val.title}</h3>
               <div className="portfolio_item-btn">
-                <a href={Val.github} className="gallery_btn" target="_blank">
-                  Github
+                <a href={Val.link} className="gallery_btn" target="_blank">
+                  {Val.button}
                 </a>
                 <a
                   href={Val.demo}
