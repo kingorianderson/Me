@@ -15,7 +15,7 @@ const Works = () => {
   };
   return (
     // Skills accordion collapsible
-    <section className="section" id="work">
+    <section className="section top-work" id="work">
       <h5>My Skills</h5>
       <h2>Experience</h2>
 
