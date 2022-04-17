@@ -186,15 +186,15 @@ section > h2 {
 .salute {
   color: var(--title-color);
 }
-/*
+
 a {
-    color: var(--first-color);
-    transition: var(--transition);
+  /* color: var(--first-color); */
+  transition: var(--transition);
 }
 
-a:hover {
+/* a:hover {
     color: var(--first-color-hover);
-}*/
+} */
 
 .btn {
   width: max-content;
@@ -510,7 +510,7 @@ input:checked + .slider:before {
   }
 
   .container.testimonials_container {
-    width: 70%;
+    width: 60%;
     padding-bottom: 4rem;
   }
 }
@@ -558,10 +558,6 @@ input:checked + .slider:before {
 
   .contact_title {
     display: none;
-  }
-  .container.testimonials_container {
-    width: 70%;
-    padding-bottom: 4rem;
   }
 
   .salute {
