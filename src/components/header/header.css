@@ -1,14 +1,14 @@
 header {
   padding-top: 4rem;
   /* overflow: hidden; */
-  height: 100vh;
+
+  /* margin-bottom: 35rem; */
 }
 
 .header_container {
   text-align: center;
   height: 100%;
   position: relative;
-  /*: 1px solid black;*/
 }
 
 /** Nav Head **/
@@ -52,7 +52,7 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 0;
-  /*bottom: 10%;*/
+  bottom: -150%;
 }
 
 .header_socials::after {
@@ -77,8 +77,6 @@ header {
 
 .header_social-link:hover {
   color: var(--first-color-hover);
-  /*background-color: var(--first-color);*/
-  /*color: white;*/
 }
 
 /*** Profile ***/
@@ -113,22 +111,13 @@ header {
   display: flex;
   align-items: flex-end;
 }
-/* 
-.profile-pic {
-    justify-self: center;
-    display: inline;
-    margin: 0 auto;
-    left: calc(50% - 12rem);
-    height: 100%;
-    width: auto;
-  } */
 
 /*** Scroll Dowm ***/
 .scroll_down {
   color: var(--first-color);
   position: absolute;
   right: -2.3rem;
-  /*bottom: 15%;*/
+  bottom: -135%;
   row-gap: 2.25rem;
   display: grid;
   justify-items: center;

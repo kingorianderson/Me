@@ -10,7 +10,7 @@ const Card = ({ item }) => {
               <div className="portfolio_item-image">
                 <img src={Val.img} alt={Val.title} />
               </div>
-              <h3>{Val.title}</h3>
+              <h3 style={{ color: "white" }}>{Val.title}</h3>
               <div className="portfolio_item-btn">
                 <a href={Val.link} className="gallery_btn" target="_blank">
                   {Val.button}

@@ -312,7 +312,7 @@ input:checked + .slider:before {
 
   header {
     padding-top: 1rem;
-    height: 100vh;
+    margin-bottom: 30rem;
   }
 
   .header_btn {
@@ -348,18 +348,23 @@ input:checked + .slider:before {
     justify-content: space-between;
   }
 
-  .header-items {
+  /* .header-items {
     margin-top: 3rem;
-  }
+  } */
 
   /*** Header Socials ***/
   .header_socials {
-    bottom: 15%;
+    bottom: -150%;
   }
 
   /*** Scroll Dowm ***/
   .scroll_down {
-    bottom: 20%;
+    bottom: -139%;
+  }
+
+  .skills__container {
+    gap: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .testimonial {
@@ -417,6 +422,10 @@ input:checked + .slider:before {
     width: var(--container-width-medium);
   }
 
+  header {
+    margin-bottom: 36rem;
+  }
+
   .salute {
     margin-top: 7rem;
   }
@@ -431,14 +440,14 @@ input:checked + .slider:before {
   }
 
   /*** Header Socials ***/
-  .header_socials {
+  /* .header_socials {
     bottom: 10%;
-  }
+  } */
 
   /*** Scroll Dowm ***/
-  .scroll_down {
+  /* .scroll_down {
     bottom: 15%;
-  }
+  } */
 
   .testimonial {
     padding: 1.5rem;
@@ -478,6 +487,10 @@ input:checked + .slider:before {
     width: var(--container-width-medium);
   }
 
+  header {
+    margin-bottom: 40rem;
+  }
+
   .salute {
     margin-top: 7rem;
   }
@@ -485,16 +498,6 @@ input:checked + .slider:before {
   .myname,
   .text-light {
     margin-top: 0.5rem;
-  }
-
-  /*** Header Socials ***/
-  .header_socials {
-    bottom: 10%;
-  }
-
-  /*** Scroll Dowm ***/
-  .scroll_down {
-    bottom: 15%;
   }
 
   .top-work {
@@ -516,6 +519,11 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 1201px) {
+  header {
+    padding-top: 1rem;
+    margin-bottom: 40rem;
+  }
+
   .contact_form-tag {
     left: 47%;
   }
@@ -524,15 +532,6 @@ input:checked + .slider:before {
     display: none;
   }
 
-  /*** Header Socials ***/
-  .header_socials {
-    bottom: 10%;
-  }
-
-  /*** Scroll Dowm ***/
-  .scroll_down {
-    bottom: 15%;
-  }
   .container.testimonials_container {
     width: 40%;
     padding-bottom: 4rem;

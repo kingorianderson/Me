@@ -3,7 +3,7 @@ import { MdCropRotate } from "react-icons/md";
 import { FaNetworkWired } from "react-icons/fa";
 import IMG from "../assets/profile-testimony.png";
 import IMG1 from "../assets/travel.PNG";
-import IMG2 from "../assets/food.png";
+import IMG2 from "../assets/movie.jpg";
 import IMG3 from "../assets/logo.jpg";
 import IMG4 from "../assets/hiking.jpg";
 import IMG5 from "../assets/branding.jpg";
@@ -158,7 +158,7 @@ export const skills = [
     percent_three: "53%",
     skillsbar_three: (
       <>
-        <div className="skills__percentage skills__switcing"></div>
+        <div className="skills__percentage skills__switching"></div>
       </>
     ),
 
@@ -183,11 +183,11 @@ export const Data = [
   },
   {
     id: "2",
-    title: "Food Ordering",
+    title: "Movie App",
     category: "Web",
     img: IMG2,
-    link: "https://github.com/kingorianderson",
-    demo: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson/movies-app",
+    demo: "https://uhdmovies.netlify.app/",
     button: "Github",
   },
   {
@@ -195,8 +195,8 @@ export const Data = [
     title: "Logo Design",
     category: "Design",
     img: IMG3,
-    link: "https://github.com/kingorianderson",
-    demo: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson/",
+    demo: "https://github.com/kingorianderson/",
     button: "Dribbble",
   },
   {

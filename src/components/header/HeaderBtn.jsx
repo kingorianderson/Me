@@ -1,11 +1,14 @@
 import React from "react";
-import CV from "../../assets/Kingori-Cv.pdf";
 
 const HeaderBtn = () => {
   return (
     <div className="header_btn">
-      <a href={CV} download className="btn download-btn">
-        Download CV
+      <a
+        href="https://github.com/kingorianderson/kingorianderson"
+        target="_blank"
+        className="btn download-btn"
+      >
+        README.md
       </a>
       <a href="#contact" className="btn btn-primary">
         Hire Me
