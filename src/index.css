@@ -354,12 +354,12 @@ input:checked + .slider:before {
 
   /*** Header Socials ***/
   .header_socials {
-    bottom: -150%;
+    bottom: -110%;
   }
 
   /*** Scroll Dowm ***/
   .scroll_down {
-    bottom: -139%;
+    bottom: -100%;
   }
 
   .skills__container {

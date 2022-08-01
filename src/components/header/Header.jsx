@@ -27,7 +27,7 @@ const Header = () => {
           <div className="scroll_name">Scroll Down</div>
         </a>
       </div>
-    </>
+    </>  
   );
 };
 

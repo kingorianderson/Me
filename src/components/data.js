@@ -4,7 +4,7 @@ import { FaNetworkWired } from "react-icons/fa";
 import IMG from "../assets/profile-testimony.png";
 import IMG1 from "../assets/travel.PNG";
 import IMG2 from "../assets/movie.jpg";
-import IMG3 from "../assets/logo.jpg";
+import IMG3 from "../assets/logo.jpeg";
 import IMG4 from "../assets/hiking.jpg";
 import IMG5 from "../assets/branding.jpg";
 import IMG6 from "../assets/data.jpg";
@@ -192,12 +192,12 @@ export const Data = [
   },
   {
     id: "3",
-    title: "Logo Design",
+    title: "E Shopping App",
     category: "Design",
     img: IMG3,
-    link: "https://github.com/kingorianderson/",
-    demo: "https://github.com/kingorianderson/",
-    button: "Dribbble",
+    link: "https://github.com/kingorianderson/shopping-app",
+    demo: "https://shopping-app-ke.vercel.app/",
+    button: "Github",
   },
   {
     id: "4",
