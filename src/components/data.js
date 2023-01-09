@@ -204,8 +204,8 @@ export const Data = [
     title: "Adventure Landing Page",
     category: "Web",
     img: IMG4,
-    link: "https://github.com/kingorianderson",
-    demo: "https://github.com/kingorianderson",
+    link: "https://github.com/kingorianderson/react-js-food-app",
+    demo: "https://food-ordering-app-ke.netlify.app/",
     button: "Github",
   },
   {
