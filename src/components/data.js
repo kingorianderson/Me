@@ -5,7 +5,7 @@ import IMG from "../assets/profile-testimony.png";
 import IMG1 from "../assets/travel.PNG";
 import IMG2 from "../assets/movie.jpg";
 import IMG3 from "../assets/logo.jpeg";
-import IMG4 from "../assets/hiking.jpg";
+import IMG4 from "../assets/food.PNG";
 import IMG5 from "../assets/branding.jpg";
 import IMG6 from "../assets/data.jpg";
 
