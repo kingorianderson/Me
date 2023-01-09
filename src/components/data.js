@@ -201,7 +201,7 @@ export const Data = [
   },
   {
     id: "4",
-    title: "Adventure Landing Page",
+    title: "Food Ordering App",
     category: "Web",
     img: IMG4,
     link: "https://github.com/kingorianderson/react-js-food-app",
