@@ -14,7 +14,7 @@
     "react-scroll": "^1.8.6",
     "swiper": "^8.0.7",
     "web-vitals": "^2.1.4",
-    "yarn": "^1.22.17"
+    "yarn": "^1.22.22"
   },
   "scripts": {
     "start": "react-scripts start",
