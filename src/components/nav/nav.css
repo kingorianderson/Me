@@ -1,0 +1,78 @@
+nav {
+  background: hsla(var(--hue-color), 80%, 30%, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  transition: var(--transition);
+  cursor: pointer;
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--container-color);
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  color: var(--container-color);
+  background: radial-gradient(
+    circle at 50% -20.47%,
+    hsl(var(--hue-color), 80%, 85%),
+    hsl(var(--hue-color), 80%, 80%),
+    hsl(var(--hue-color), 80%, 75%),
+    hsl(var(--hue-color), 80%, 70%),
+    hsl(var(--hue-color), 80%, 65%),
+    hsl(var(--hue-color), 80%, 60%),
+    hsl(var(--hue-color), 80%, 55%),
+    hsl(var(--hue-color), 80%, 50%),
+    hsl(var(--hue-color), 80%, 45%),
+    hsl(var(--hue-color), 80%, 40%),
+    hsl(var(--hue-color), 80%, 35%),
+    hsl(var(--hue-color), 80%, 30%),
+    hsl(var(--hue-color), 80%, 25%),
+    hsl(var(--hue-color), 80%, 20%),
+    hsl(var(--hue-color), 80%, 15%)
+  );
+}
+
+nav a.active {
+  background: radial-gradient(
+    circle at 50% -20.47%,
+    hsl(var(--hue-color), 80%, 85%),
+    hsl(var(--hue-color), 80%, 80%),
+    hsl(var(--hue-color), 80%, 75%),
+    hsl(var(--hue-color), 80%, 70%),
+    hsl(var(--hue-color), 80%, 65%),
+    hsl(var(--hue-color), 80%, 60%),
+    hsl(var(--hue-color), 80%, 55%),
+    hsl(var(--hue-color), 80%, 50%),
+    hsl(var(--hue-color), 80%, 45%),
+    hsl(var(--hue-color), 80%, 40%),
+    hsl(var(--hue-color), 80%, 35%),
+    hsl(var(--hue-color), 80%, 30%),
+    hsl(var(--hue-color), 80%, 25%),
+    hsl(var(--hue-color), 80%, 20%),
+    hsl(var(--hue-color), 80%, 15%)
+  );
+  box-shadow: 0 0 16px hsla(var(--hue-color), var(--sat), var(--lig), 0.4);
+  /*border: 0.5px solid var(--hue-color);
+    background: radial-gradient(circle at 50% -20.47%, 
+              hsl(170, 80%, 85%), hsl(170, 80%, 80%), hsl(170, 80%, 75%),
+              hsl(170, 80%, 70%), hsl(170, 80%, 65%), hsl(170, 80%, 60%),
+              hsl(170, 80%, 55%), hsl(170, 80%, 50%), hsl(170, 80%, 45%),
+              hsl(170, 80%, 40%), hsl(170, 80%, 35%), hsl(170, 80%, 30%), 
+              hsl(170, 80%, 25%), hsl(170, 80%, 20%), hsl(170, 80%, 15%));
+    */
+}
